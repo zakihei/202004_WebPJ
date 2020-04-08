@@ -1,11 +1,27 @@
-.title {
-    background: pink;
+.wrapper { 
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.SubTitle {
-    color: green;
+.header-title {
+    background: violet;
 }
 
-a:hover {
-    color: coral;
+.contaier {
+    display: flex;
+}
+
+#main-content {
+    background: red;
+    width: 80%;
+}
+
+#side-menu {
+    background: orange;
+    width: 20%;
+    flex-direction: row;
+}
+
+footer {
+    background: seagreen;
 }
