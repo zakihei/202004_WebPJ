@@ -18,10 +18,10 @@
 
     /* ボタンを押したらイベント情報の文が増える */ 
     document.getElementById("event-reload").addEventListener("click", ()=>{
-        let item = document.createElement("p");
+        const item = document.createElement("p");
         item.textContent = "新しい記事です";
 
-        let event_info = document.querySelector("event-info");
+        const event_info = document.getElementById("event-info");
         event_info.appendChild(item);
     });
 }
