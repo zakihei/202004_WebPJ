@@ -5,97 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestPage</title>
     <link rel="stylesheet" href="style.css">
+    <!--Webアイコンを取得-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
-  
-<div class="wrapper">
-  <body>
-    <!--ヘッダー部分-->
-    <header class="header-title">
-      <section>
-        <h1> ヘッダー部分</h1>
-        <img alt="ロゴ" width="228" height="158" src="./pic_sample/logo_sample.png">
-      </section>
 
-      <section>
-        <img alt="性別" width="100" height="40" src="./pic_sample/genderitem_sample.png">
-        <img alt="男性" width="200" height="60" src="./pic_sample/genderman_sample.png">
-        <img alt="女性" width="200" height="60" src="./pic_sample/genderwoman_sample.png">
-        <img alt="ログイン画像" width="210" height="70" src="./pic_sample/login_sample.png">
-      </section>
-    </header>
+  <div class="wrapper">
+    <body>
 
-    <div class="contaier">
-      <!--サイドメニュー-->
-      <nav id="side-menu">
-        <h1>サイドメニュー部分</h1>
-        <ul>
-          <li>ホーム</li>
-          <li>サービス内容・使い方</li>
-          <li>料金</li>
-          <li>お知らせ</li>
-          <li>ブログ</li>
-          <li>よくある質問</li>
-        </ul>
-      </nav>
+      <!--jQuery読み込み-->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
 
-      <!--メイン(コラム)-->
-      <main id="main-content">
-        <h1>メイン部分</h1>
-        <img alt="テスト画像" width="700" height="400" src="./pic_sample/headline_sample.jpg">
-        
-        <!--イントロ部分-->
-        <div id="intro-container">
-          <div id="intro-picture-container">
-            <img alt="紹介用画像" width="350" height="400" src="./pic_sample/intro_sample1.jpg">
-          </div>
-          <div id="intro-paragraph-container">
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
-            <p>イントロダクション</p>
+      <!--ヘッダー部分-->
+      <header class="header-title">
+        <div id="header-cantainer">
+          <h1> ヘッダー部分</h1>
+          <img alt="ロゴ" width="228" height="158" src="./pic_sample/logo_sample.png">
+          <img alt="会員申し込み" width="100" height="40" src="./pic_sample/genderitem_sample.png">
+          <div id="header-cantainer-div">
+            <div>          
+              <a class="btn" href="" >男性はこちら</a>
+              <a class="btn" href="" >女性はこちら</a>
+              <a class="btn" id="btn-login" href="" >ログイン</a>
+            </div>
+
+            <!--
+            <img alt="男性" width="200" height="60" src="./pic_sample/genderman_sample.png">
+            <img alt="女性" width="200" height="60" src="./pic_sample/genderwoman_sample.png">
+            <img alt="ログイン画像" width="210" height="70" src="./pic_sample/login_sample.png">
+            -->
+            <div>
+              <p id="toppage-comment">このサイトは未完成です。</p>
+            </div>
           </div>
         </div>
+      </header>
 
-        <!--イベント情報-->
-        <img alt="イベント紹介画像" width="800" height="100" src="./pic_sample/home_events_tit_sample.png">
-        <p>イベント情報リンク</p>
-        <p>イベント情報リンク</p>
+      <div class="main-contaier">
+        <!--サイドメニュー-->
+        <nav id="side-menu">
+          <h1>サイドメニュー部分</h1>
+          <ul id="main-menu">
+            <li>ホーム</li>
+            <li>サービス内容・使い方</li>
+            <li>料金</li>
+            <li>お知らせ</li>
+            <li>ブログ</li>
+            <li>よくある質問</li>
+          </ul>
+        </nav>
 
-        <!--ブログ情報-->
-        <img alt="タイトルブログ画像" width="800" height="100" src="./pic_sample/home_blog_tit_sample.png">
-        <p>ブログリンク</p>
-        <p>ブログリンク</p>
+        <!--メイン(コラム)-->
+        <main id="main-content">
+          <h1>メイン部分</h1>
 
-        <!--参加者情報-->
-        <img alt="参加者タイトル画像" width="800" height="100" src="./pic_sample/participant_title_sample.png">
-        <div id="participant-mergin-container"></div>
+          <img alt="テスト画像" width="700" height="400" src="./pic_sample/headline_sample.jpg">
+
+          <!--イントロ部分-->
+          <div id="intro-container">
+            <div id="intro-picture-container">
+              <img alt="紹介用画像" width="350" height="400" src="./pic_sample/intro_sample1.jpg">
+            </div>
+            <div id="intro-paragraph-container">
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+              <p>イントロダクション</p>
+            </div>
+          </div>
+
+          <!--イベント情報-->
+          <img alt="イベント紹介画像" width="500" height="70" src="./pic_sample/home_events_tit_sample.png">
+          <div id="event-info">
+            <!--練習用-->
+            <button id="event-reload">更新</button>
+            <p>イベント情報リンク</p>
+            <p>イベント情報リンク</p>                
+          </div>
+          <!--練習用用スクリプト-->
+          <script src="test.js"></script>
+
+          <!--ブログ情報-->
+          <img alt="タイトルブログ画像" width="500" height="70" src="./pic_sample/home_blog_tit_sample.png">
+          <p>ブログリンク</p>
+          <p>ブログリンク</p>
+
+          <!--参加者情報-->
+          <img alt="参加者タイトル画像" width="500" height="70" src="./pic_sample/participant_title_sample.png">
           <div id="participant-container">
-          <div id="articipant1-container">
-            <img alt="参加者1" width="200" height="200" src="./pic_sample/participant1_sample.jpg">
-            <p>白石まりな(AV女優)</p>
+            <div id="participant-margin-container"></div>
+            <div id="participant1-container">
+              <img alt="参加者1" width="200" height="200" src="./pic_sample/participant1_sample.jpg">
+              <p>白石まりな(AV女優)</p>
+            </div>
+            <div id="participant-margin-container"></div>
+            <div id="participant1-container">
+              <img alt="参加者2" width="200" height="200" src="./pic_sample/participant2_sample.jpeg">
+              <p>KBTIT(漫画家)</p>
+            </div>
+            <div id="participant-margin-container "></div>
           </div>
-          <div id="participant-mergin-container"></div>
-          <div id="articipant1-container">
-            <img alt="参加者2" width="200" height="200" src="./pic_sample/participant2_sample.jpeg">
-            <p>KBTIT(漫画家)</p>
-          </div>
-          <div id="participant-mergin-container"></div>
-        </div>
 
-      </main>
-    </div>
+        </main>
+      </div>
 
-    <!--フッター-->
-    <footer class="page-footer">
-      <h1>フッター部分</h1>
-       <img alt="フッター" width="148" height="73" src="./pic_sample/footer_logo_sample.png" >
-    </footer>
-
-  </body>
-
-</div>
+      <!--フッター-->
+      <footer class="page-footer">(C) Sysprimary</footer>
+      <!--<i class="fas fa-angle-double-up fa-2x"><a href="#"></a></i>-->
+      <div id="page_top"><a href="#"></a></div>
+    
+    </body>
+  </div>
 </html>
