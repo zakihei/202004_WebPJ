@@ -11,11 +11,12 @@
     */
 
     /* 練習用 */
-    document.getElementById("btn-login").addEventListener("click", ()=>{
+    /*document.getElementById("btn-login").addEventListener("click", ()=>{
         window.alert("ログインボタン押下");
         document.getElementById("toppage-comment").textContent = "DOM操作";
     });
-
+    */
+   
     /* ボタンを押したらイベント情報の文が増える */ 
     document.getElementById("event-reload").addEventListener("click", ()=>{
         const item = document.createElement("p");
