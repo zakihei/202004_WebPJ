@@ -2,13 +2,48 @@
     background: pink;
 }
 
-form {
-  float: right;
-  margin: 100px 500px 30px 500px;
-  font-family: 'segoe print', 'Papyrus', 'Bradley Hand', 'serif';
+@media screen and (max-width:1000px){
+  body{
+    color: #5bc0de;
+  }
 }
 
-h1 {
+.header{
+  margin: 0px 50px 100px 50px;
+  height: 100px;
+}
+
+.header ul h1 {
+  float: left;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0px 50px;
+}
+
+.header ul li {
+  float: left;
+  font-size: 20px;
+  padding: 0px 0px 100px 100px;
+  height: 20px;
+}
+
+.header ul li span {
+  float: left;
+  font-size: 25px;
+  padding: 0px 0px 100px 100px;
+}
+
+body{
+  margin: 100px 250px 100px 250px;
+}
+
+form {
+  font-family: 'segoe print', 'Papyrus', 'Bradley Hand', 'serif';
+  float: right;
+  padding: 100px 0px ;
+}
+
+.contact-title {
     color: #26d0c9;
     font-size: 40px;
 }
@@ -20,17 +55,52 @@ label {
 }
 
 input {
-  font-size: 30px;
+  font-size: 20px;
+  height: 60px;
+  width: 500px;
+  margin: 20px 0px;
 }
 
 textarea {
-  font-size: 35px;
-  height: 300px;
+  font-size: 20px;
+  height: 400px;
+  width: 500px;
+  margin: 30px 0px;
+  font-weight: lighter;
 }
 
 button {
-    color: #26d0c9;
-    font-size: 20px;
-    font-weight: bold;
-    float: right;
+  background-color: #26d0c9;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  margin: 30px 0px;
+}
+
+li {
+  list-style: none;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 40px 40px;
+}
+
+.circle {
+  display: inline-block;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: skyblue;
+  text-align:center;
+  line-height: 100px;
+  margin: 100px 100px 0px 450px;
+
+}
+
+.footer li{
+  font-size: 15px;
+  float: left;
+  padding: 100px 120px;
 }

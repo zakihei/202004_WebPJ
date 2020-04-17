@@ -4,32 +4,81 @@
 <meta charset="UTF-8">
 <title>お問い合わせ</title>
 <link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="contact.js"></script>
+<meta name=”viewport” content=”width=device-width, initial-scale=1”>
 </head>
 <body>
-<div>
-    <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
-        <h1 class="contact-title">お問い合わせ</h1>
-        <div>
-            <div>
-                <label>お名前<span>(必須)</span></label><br>
-                <input type="text" name="name" placeholder="例）山田太郎" value="">
-            </div>
-            <div>
-                <label>メールアドレス<span>(必須)</span></label><br>
-                <input type="text" name="email" placeholder="例）guest@example.com" value="">
-            </div>
-            <div>
-                <label>題名</label><br>
-                <input type="text" name="title" placeholder="題名を入力" value="">
-            </div>
-            <div>
-                <label>メッセージ本文<span>(必須)</span></label><br>
-                <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
-            </div>
-        </div>
-        <button type="submit">送信</button>
+  <header><!-- ヘッダー始まり -->
+  <!-- ロゴ画像貼り付け予定　-->
+  <img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\header_rogo.png" alt="ヘッダーロゴ画像" width="220" height="150" >
+  <div class="header">
+    <nav>
+       <ul>
+        <!-- 各種画像およびリンク貼り付け予定 -->
+         <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\01_TopPage_miyazaki/index_test.html">
+          <img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\header_genderitem.png" alt="会員申込" width="220" height="150" ></a></li>
+         <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\01_TopPage_miyazaki/index_test.html">
+          <img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\header_genderman.png" alt="男性" width="220" height="150" ></a></li>
+         <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata/Contact.html">
+          <img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\header_genderwoman.png" alt="女性" width="220" height="150" ></a></li>
+         <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\03_Notice_kagaya/Notice.html">
+          <img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\header_login.png" alt="ログイン" width="220" height="150" ></a></li>
+       </ul>
+     </nav>
+   </div>
+   <hr noshade>　<!--　ライン　-->
+  </header><!-- ヘッダー終わり -->
+   <!--　↓のコードはメール送信用のコード？　-->
+  <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+      <h1 class="contact-title">お問い合わせ</h1>
+      <div>
+          <div>
+              <label>お名前<span>(必須)</span></label><br>
+              <input type="text" name="name" placeholder="例）山田太郎" value="">
+          </div>
+          <div>
+              <label>メールアドレス<span>(必須)</span></label><br>
+              <input type="text" name="email" placeholder="例）guest@example.com" value="">
+          </div>
+          <div>
+              <label>題名</label><br>
+              <input type="text" name="title" placeholder="題名を入力" value="">
+          </div>
+          <div>
+              <label>メッセージ本文<span>(必須)</span></label><br>
+              <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
+          </div>
+      </div>
+      <button type="submit">送信</button>
     </form>
-</div>
+  <nav>
+    <ul>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\01_TopPage_miyazaki/index_test.html">01_TopPage</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata/Contact.html">02_Contact</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\03_Notice_kagaya/Notice.html">03_Notice</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\04_Service/Service.html">04_Service</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\05_Price/Price.html">05_Price</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\06_Question/Question.html">06_Question</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\07_Blog/Blog.html">07_Blog</a></li>
+      <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\08_Login/Login.html">08_Login</a></li>
+    </ul>
+  </nav>
+  <footer><!-- フッター始まり -->
+      <div>
+        <p id="pageTop"><a class="circle" a href="#">top</a></p>
+      </div>
+     <div class="header">
+      <nav>
+        <ul><!--　※リンクは今後修正　-->
+          <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\01_TopPage_miyazaki/index_test.html">Home<a></li>
+          <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\01_TopPage_miyazaki/index_test.html">運用団体概念</a></li>
+          <li><a href="C:\Users\user\Dropbox\Web開発\02_開発\01_TopPage_miyazaki/index_test.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+     </div>
+    <hr noshade>　<!--　ライン　-->
+    <!--　ロゴ画像貼り付け予定　-->
+    <li><img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\footer_logo.png" alt="フッターロゴ画像1" width="220" height="150" ></li>
+    <li><img src="C:\Users\user\Dropbox\Web開発\02_開発\02_Contact_sato_amahata\img\footer_tree.png" alt="フッターロゴ画像2" width="220" height="150" ></li>
+  </footer><!-- フッター始まり -->
 </body>
 </html>
