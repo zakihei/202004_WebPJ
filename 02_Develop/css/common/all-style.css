@@ -1,0 +1,84 @@
+/* ヘッダーに使用 */
+#masthead {
+  background-image: url("../../img/common/header.jpg");
+  background-size: cover;
+  height: 330px;
+  position: relative;
+}
+
+#masthead h1 {
+  text-align: center;
+  color: black;
+}
+
+#masthead .container-fixed {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  left: 0;
+  /*    bottom: 70px; */
+}
+
+#masthead .masthead-description {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content {
+  margin: 0 auto 80px;
+  margin-top: 90px;
+  max-width: 960px;
+  height: auto;
+  overflow: hidden;
+}
+
+.content-description {
+  margin-bottom: 2em;
+}
+
+.content-description .description {
+  word-wrap: break-word;
+}
+
+.content-description .scroll {
+  overflow: auto;
+  height: 240px;
+  background-color: lightgray;
+}
+
+#content h1 {
+  font-weight: lighter;
+  font-size: 150%;
+  border-bottom: #1e90ff solid thin;
+  margin-bottom: 30px;
+}
+
+/*画像のリサイズ*/
+p.resizeimage img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width:990px) {
+
+  /*
+    画面幅が990px以下の時に発動
+     */
+  #masthead .container-fixed {
+    top: 80px;
+  }
+
+  #content .content-description {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+/* フッター */
+footer {
+  padding: 64px 0;
+  background: black;
+  color:#98969c;
+  text-align: center;
+}
