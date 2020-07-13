@@ -80,9 +80,77 @@ src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
         <!-- トピックのRow -->
         <div class="col-lg-8">
           <div class="row" id="overall-right-style">
-            <div class="col-lg-12" id="topic-news-style">newsとかいれれたらいいなあ(優先度低)</div>
-            <div class="col-lg-12" id="topic-community-style">コミュニティ一覧</div>
-            <div class="col-lg-12" id="topic-other-style">Other</div>
+
+            <!--News_sectionHeader-->            
+            <div class="col-lg-12" id="topic-news-style">
+              <div class="sectionHeader">
+                <h2 class="community">News</h2>
+                <p><a href="https://mixi.jp/search_community.pl">News</a></p>
+              </div>                
+            </div>
+
+            <!--Community_sectionHeader-->
+            <div class="col-lg-12" id="topic-community-style">
+              <div class="sectionHeader">
+                <h2 class="community">コミュニティ</h2>
+                <p><a href="https://mixi.jp/search_community.pl">コミュニティへ</a></p>
+              </div>
+
+              <!--/communityContent-->
+              <div class="communityContent sectionContent">
+                <!--/thumbnailList col4-->
+                <ul class="thumbnailList col4">
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1677149"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/71/49/1677149_196.jpg" alt="可愛い人妻が好き♡"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=1677149">可愛い人妻が好き♡</a>(2008)</span>
+                  </li>
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=9"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/0/9/9_45.gif" alt="酒好き"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=9">酒好き</a>(166481)</span>
+                  </li>
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1840848"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/8/48/1840848_43.jpg" alt="心の居場所"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=1840848">心の居場所</a>(6432)</span>
+                  </li>  
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=3993718"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/37/18/3993718_24.jpg" alt="自衛隊 フレンドシップコミュ"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=3993718">自衛隊 フレンドシップコミュ</a>(6178)</span>
+                  </li>
+                </ul>
+
+                <!--/thumbnailList col5 -->                
+                <ul class="thumbnailList col5">
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=5697229"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/72/29/5697229_178.jpg" alt="乃木坂46 (ノギザカ46)"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=5697229">乃木坂46 (ノギザカ46)</a>(21303)</span>
+                  </li>
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1257679"><img src="https://img.mixi.net/img/basic/common/noimage_comm180.gif" alt="☆嫁♪ガンバレ!!嫁姑問題☆"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=1257679">☆嫁♪ガンバレ!!嫁姑問題☆</a>(10510)</span>
+                  </li>
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=274"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/2/74/274_17.jpg" alt="千葉 ロッテマリーンズ"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=274">千葉 ロッテマリーンズ</a>(37401)</span>
+                  </li>
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=4563712"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/37/12/4563712_146.png" alt="管理栄養士合格＆知識維持100%"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=4563712">管理栄養士合格＆知識維持100%</a>(2988)</span>
+                  </li>
+                  <li>
+                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=347263"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/72/63/347263_12.jpg" alt="ＴＨＥ☆恋愛相談"></a>
+                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=347263">ＴＨＥ☆恋愛相談</a>(27974)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--Other_sectionHeader-->            
+            <div class="col-lg-12" id="topic-other-style">
+              <div class="sectionHeader">
+                <h2 class="community">Other</h2>
+                <p><a href="https://mixi.jp/search_community.pl">Other</a></p>
+              </div>  
+            </div>
           </div>
         </div>
 
@@ -90,18 +158,18 @@ src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
         <div class="col-lg-4">
           <div class="row" id="overall-left-style">
             <!-- 新規登録ボタン リンクを貼る -->
-            <a href="xxxxx" class="col-lg-12 btn btn-primary signup-btn-style">新規登録はこちら</a>
+            <a href="./signup.html" class="col-lg-12 btn btn-primary signup-btn-style">新規登録はこちら</a>
             <!-- ログインフォーム -->
             <div class="col-lg-12" id="loginform-style">
               <div>
                 <div>
                   <div>
                     <span class="loginForm-inputLabel">LoginID</span>
-                    <input type="text" name="Login_ID" size="30" tabindex="1" placeholder="xxxxxxxxxx" value="">
+                    <input type="text" name="Login_ID" size="30" tabindex="1" placeholder="LoginID" value="">
                   </div>
                   <div>
                     <span class="loginForm-inputLabel">PassWord</span>
-                    <input type="text" name="Password" size="30" tabindex="2" placeholder="xxxxxxxxxx" value="">
+                    <input type="text" name="Password" size="30" tabindex="2" placeholder="Password" value="">
                   </div>
                 </div>
                 <p><input type="checkbox" checked="checked" id="auto" name="sticky" tabindex="3">

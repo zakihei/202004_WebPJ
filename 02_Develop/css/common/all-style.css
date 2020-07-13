@@ -82,3 +82,10 @@ footer {
   color:#98969c;
   text-align: center;
 }
+
+/* li, ulの共通スタイル */
+ul, ol, li, dl, dt, dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

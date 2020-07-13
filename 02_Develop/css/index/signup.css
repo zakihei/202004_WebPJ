@@ -1,0 +1,72 @@
+/* 新規登録の全体のスタイル */
+.signup-all-style {
+	margin: 50px 100px 50px 100px;
+}
+
+/* 新規登録の画像 */
+.mainImg {
+	text-align: center;
+	margin: 15px 0 30px;
+	border:green solid thin;
+}
+
+/* 画像の下の説明文 */
+.mainImg p {
+	font-size: 100%;
+	color: #666;
+}
+
+/* メール登録画面全体のRowのスタイル */
+.registerEmail {
+	border:yellow solid thin;
+}
+
+#input_email_address{
+	margin-left: 25%;
+	width: 50%;
+}
+
+.button input[type=submit] {
+	margin-left: 25%;
+	cursor: pointer;
+}
+
+.mailButton {
+	background-color: #cfa34c;
+	color: #fff;
+	width: 50%;
+	margin-left: 25%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
+	font-size: 133%;
+	line-height: 50px;
+	padding: 5px 0px 5px 0px;
+}
+
+body, input, textarea {
+	font-family: sans-serif;
+}
+
+.orTxt {
+	text-align: center;
+	margin: 5px 0px 5px 0px;
+}
+
+.JOIN__button {
+	background-color: blue;
+	text-decoration: none;
+	color: #fff;
+	width: 50%;
+	margin-left: 25%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
+	font-size: 133%;
+	line-height: 50px;
+	padding: 0;
+}
+
+

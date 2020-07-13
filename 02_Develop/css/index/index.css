@@ -12,9 +12,84 @@
     margin-top: 15px;
 }
 
+/* セクションのヘッダーのスタイル */
+.sectionHeader {
+    padding: 15px 15px 10px 0;
+    border-bottom: 4px solid #e1c04f;
+}
+
+/*---- thumbnailList ----*/
+ul.thumbnailList{
+    margin:0 0 20px 15px;
+}
+
+ul.thumbnailList.col4 li{
+    float:left;
+    width:150px;
+    height:210px;
+    margin-right:15px;
+}
+
+ul.thumbnailList.col4 li a.thumbnail{
+    display:table-cell;
+    *display:block;
+    width:150px;
+    height:150px;
+    line-height:150px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+ul.thumbnailList.col4 li a.thumbnail img{
+    max-width:150px;
+    max-height:150px;
+    vertical-align:middle;
+}
+
+ul.thumbnailList.col5 li{
+    float:left;
+    width:120px;
+    margin-right:11px;
+}
+
+ul.thumbnailList.col5 li a.thumbnail{
+    display:table-cell;
+    width:120px;
+    height:120px;
+    layout-grid-line:120px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+ul.thumbnailList.col5 li a.thumbnail img{
+    max-width:120px;
+    max-height:120px;
+    vertical-align:middle;
+}
+
+ul.thumbnailList li .name{
+    display:block;
+    line-height:1.3;
+    padding-top:8px;
+}
+
+ul.thumbnailList li .name a{
+    font-size:100%;
+}
+    
+.sectionHeader h1, .sectionHeader h2 {
+    float: left;
+    width: 440px;
+    line-height: 1.3;
+    padding-left: 35px;
+    font-weight: bold;
+    font-size: 150%;
+}
+/*---- thumbnailList End ----*/
+
 /* newsトピックスタイル */
 #overall-right-style > #topic-news-style {
-    height: 300px;
+    height: 500px;
     width: 100%;
     border:red solid thin;
     padding: 10px 20px 20px 50px;
@@ -22,7 +97,7 @@
 
 /* communityトピックスタイル */
 #overall-right-style > #topic-community-style {
-    height: 300px;
+    height: 500px;
     width: 100%;
     border:green solid thin;
     padding: 10px 20px 20px 50px;
@@ -31,7 +106,7 @@
 
 /* otherトピックスタイル */
 #overall-right-style > #topic-other-style {
-    height: 300px;
+    height: 500px;
     width: 100%;
     border:blue solid thin;
     padding: 10px 20px 20px 50px;
