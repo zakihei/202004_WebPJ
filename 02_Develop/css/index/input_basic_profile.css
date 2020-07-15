@@ -1,0 +1,40 @@
+/* 新規登録の初期プロフィール入力の大枠 */
+.inputForm-basic-profile {
+  border:red solid thin;
+  margin-left: 17%;
+}
+
+/* ニックネーム入力欄のスタイル */
+.nickname-style {
+  margin-bottom: 3%;
+}
+
+/* 性別選択のラジオボタンのスタイル */
+.sex-style {
+  margin-bottom: 3%;
+}
+
+/* 生年月日のセレクトボックスのスタイル */
+.birthday-style {
+  margin-bottom: 3%;
+}
+
+/* 居住地域のセレクトボックスのスタイル */
+.residentialAreas-style {
+  margin-bottom: 3%;
+}
+
+/* 利用目的のチェックボックスのスタイル */
+.purpose-style {
+  margin-bottom: 3%;
+}
+
+.inputForm-basic-profile input[type=checkbox] {
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+/* 初期パスワード入力欄のスタイル */
+.firstPassword-style {
+  margin-bottom: 3%;
+}
