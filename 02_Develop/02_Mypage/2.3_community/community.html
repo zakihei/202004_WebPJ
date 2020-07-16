@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>個人用ページ</title>
+<link rel="stylesheet" href="style.css">
+<meta name=”viewport” content=”width=device-width, initial-scale=1”>
+</head>
+<body>
+  <header><!-- ヘッダー始まり -->
+  <!-- ロゴ画像貼り付け予定　-->
+  <img src="" alt="ヘッダーロゴ画像" width="220" height="150" >
+  <div class="header">
+    <nav>
+         <nobr><center>
+        <!-- リンク貼り付け予定 -->
+          <a href="">プロフィール</a>
+          <a href="">コミュニティ</a>
+          <a href="">友達一覧</a>
+          <a href="">DM</a></li>
+          <a href="">あしあと</a>
+          <a href="">つぶやき</a>
+       </nobr></center>
+     </nav>
+   </div>
+  </header><!-- ヘッダー終わり -->
+  <hr noshade>　<!--　ライン　-->
+
+  <div class="container">
+    <nav id="side">
+      <ul id="side-list">
+        カテゴリ
+        <li><a href=>音楽</a></li>
+        <li><a href=>ゲーム</a></li>
+        <li><a href=>スポーツ</a></li>
+        <li><a href=>ファッション</a></li>
+        <li><a href=>芸能人、有名人</a></li>
+        <li><a href=>グルメ、お酒</a></li>
+        <li><a href=>地域</a></li>
+        <li><a href=>etc</a></li>
+      </ul>
+    </nav>
+      <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+      <h1 class="main">コミュニティ</h1>
+          <div>
+              <input type="text" name="community" placeholder="趣味や気になるワードを入力" value="">
+              <button type="submit">検索</button>
+              <h2>参加コミュニティ一覧</h2>
+              <h2>注目のコミュニティ</h2>
+          </div>
+    </form>
+</div>
+
+  <footer><!-- フッター始まり -->
+      <div>
+        <p id="pageTop"><a class="circle" a href="#">top</a></p>
+      </div>
+     <div class="footer">
+      <nav>
+        <a href="">ログアウト</a>
+      </nav>
+     </div>
+     <hr noshade>　<!--　ライン　-->
+    <!--　ロゴ画像貼り付け予定　-->
+    <img src="" alt="フッターロゴ画像" width="220" height="130" >
+  </footer>
+</body>
+</html>
