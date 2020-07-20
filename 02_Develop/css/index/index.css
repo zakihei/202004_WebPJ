@@ -143,9 +143,15 @@ ul.thumbnailList li .name a{
 
 /* 入力フォームのラベルのスタイル */
 .loginForm-inputLabel {
-    display: block;
-    color: #666;
-    font-size: 100%;
+  display: block;
+  color: #666;
+  font-size: 100%;
+  margin: 0%;
+}
+
+/* ログイン時に困った時に飛ぶページ */
+.login-knowledge {
+  display: block;
 }
 
 /* ログインフォームのスタイル */
@@ -172,7 +178,6 @@ ul.thumbnailList li .name a{
     padding: 10px 15px 20px 15px;;
     font-size: 116%;       
 }
-
 
 /* サービスト一覧のスタイル */
 #overall-left-style > #service-style {
