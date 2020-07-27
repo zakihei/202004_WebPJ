@@ -4,14 +4,14 @@
 <head>
     <!-- 基本設定 -->
     <meta charset="UTF-8">
-    <title>プロフィール</title>
+    <title>フレンド</title>
     <link rel="icon" type="image/png" href="../img/common/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- css設定 -->
     <link rel="stylesheet" href="../css/common/all-style.css">
     <link rel="stylesheet" href="../css/index/index.css">
-    <link rel="stylesheet" href="../css/mypage/profile.css">
+    <link rel="stylesheet" href="../css/mypage/friend.css">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
     <!-- ロゴ画像-->
     <div id="masthead" class="jumbotron jumbotron-fluid">
     <div class="container container-fixed">
-    <h1>プロフィール</h1>
-    <p class="masthead-description">プロフィール</p>
+    <h1>フレンド</h1>
+    <p class="masthead-description">フレンド</p>
     </div>
     </div>
     
@@ -44,21 +44,21 @@
   
 <nav id="left"><!-- ペイン左部分-->
 
-        <li><a href=>プロフィール画像変更</a></li>
-        <li><a href=>名前変更</a></li>
-        <li><a href=>自己紹介変更</a></li>
-                  
+      <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+      <h1 class="main">友達検索</h1>
+          <div>
+              <input type="text" name="community" placeholder="名前やニックネームを入力" value="">
+              <button type="submit">検索</button>
+          </div>
+    </form>
+
 </nav><!-- ペイン左部分-->
 
 
 <nav id="side"><!-- ペイン右部分-->
-        <h1 class="main">〇〇さん</h1>
-        <!-- プロフィール画像-->
-        <img src="" alt="プロフィール画像" width="220" height="150" >
-        <li>年齢</li>
-        <li>誕生日</li>
-        <li>自己紹介</li>
-        ～自己紹介文～
+
+              <h2>友達一覧</h2>
+
 </nav><!-- ペイン右部分-->
 
 </div>
