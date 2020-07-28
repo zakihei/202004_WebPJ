@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>個人用ページ</title>
-<link rel="stylesheet" href="style.css">
-<meta name=”viewport” content=”width=device-width, initial-scale=1”>
-</head>
-<body>
-  <header><!-- ヘッダー始まり -->
-  <!-- ロゴ画像貼り付け予定　-->
-  <img src="" alt="ヘッダーロゴ画像" width="220" height="150" >
-  <div class="header">
-    <nav>
-         <nobr><center>
-        <!-- リンク貼り付け予定 -->
-          <a href="">プロフィール編集</a>
-          <a href="">コミュニティ</a>
-          <a href="">友達一覧</a>
-          <a href="">DM</a></li>
-          <a href="">あしあと</a>
-          <a href="">つぶやき</a>
-       </nobr></center>
-     </nav>
-   </div>
-  </header><!-- ヘッダー終わり -->
-  <hr noshade>　<!--　ライン　-->
 
-  <div class="container">
-    <nav id="side">
-      <ul id="side-list">
-        <li><a href=>プロフィール変更</a></li>
-        <li><a href=>画像変更</a></li>
-        <li><a href=>デザイン変更</a></li>
-      </ul>
-    </nav>
-   <form>
-      <h1 class="main">プロフィール</h1>
-      <!-- プロフィール画像-->
-     <img src="" alt="プロフィール画像" width="220" height="150" >
-        <li>名前</li>
-        <li>性別</li>
+<head>
+    <!-- 基本設定 -->
+    <meta charset="UTF-8">
+    <title>プロフィール</title>
+    <link rel="icon" type="image/png" href="../img/common/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css設定 -->
+    <link rel="stylesheet" href="../../css/common/all-style.css">
+    <link rel="stylesheet" href="../../css/mypage/profile.css">
+</head>
+
+<body>
+
+<header><!-- ヘッダー始まり -->
+
+    <!-- ロゴ画像-->
+    <div id="masthead" class="jumbotron jumbotron-fluid">
+    <div class="container container-fixed">
+    <h1>プロフィール</h1>
+    <p class="masthead-description">プロフィール</p>
+    </div>
+    </div>
+    
+    <nav><br><center><!-- ヘッダーリンク -->
+    <!-- リンク貼り付け予定 -->
+        <a class="header-list" href="">プロフィール編集</a>
+        <a class="header-list" href="">コミュニティ</a>
+        <a class="header-list" href="">友達一覧</a>
+        <a class="header-list" href="">DM</a>
+        <a class="header-list" href="">あしあと</a>
+        <a class="header-list" href="">つぶやき</a>
+    </center></nav><br>
+
+</header><!-- ヘッダー終わり -->
+
+<main>
+
+<div class="mypage"><!-- ペインcss-->
+  
+<nav id="left"><!-- ペイン左部分-->
+
+        <li><a href=>プロフィール画像変更</a></li>
+        <li><a href=>名前変更</a></li>
+        <li><a href=>自己紹介変更</a></li>
+                  
+</nav><!-- ペイン左部分-->
+
+
+<nav id="side"><!-- ペイン右部分-->
+        <h1 class="main">〇〇さん</h1>
+        <!-- プロフィール画像-->
+        <img src="" alt="プロフィール画像" width="220" height="150" >
         <li>年齢</li>
         <li>誕生日</li>
         <li>自己紹介</li>
-    </form>
+        ～自己紹介文～
+</nav><!-- ペイン右部分-->
+
 </div>
 
-  <footer><!-- フッター始まり -->
-      <div>
-        <p id="pageTop"><a class="circle" a href="#">top</a></p>
-      </div>
-     <div class="footer">
-      <nav>
-        <a href="">ログアウト</a>
-      </nav>
-     </div>
-     <hr noshade>　<!--　ライン　-->
-    <!--　ロゴ画像貼り付け予定　-->
-    <img src="" alt="フッターロゴ画像" width="220" height="130" >
-  </footer>
+    <br>
+    <footer><!-- フッター -->
+    (C) Sysprimary
+    </footer><!-- フッター終わり -->
+    
+</main>
 </body>
 </html>
