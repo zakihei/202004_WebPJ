@@ -21,7 +21,7 @@
 	border:yellow solid thin;
 }
 
-#input_email_address{
+.input_email_address{
 	margin-left: 25%;
 	width: 50%;
 }

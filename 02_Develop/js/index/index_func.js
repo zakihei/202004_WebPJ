@@ -1,6 +1,8 @@
 
   'use strict';
 {
+
+  /* index_func.html */
   /* メールアドレスチェック関数 */
   document.getElementById('loginbtn').addEventListener('click',()=>{
 
@@ -14,20 +16,24 @@
     /* パスワード入力欄の値取得 */
     let password = document.getElementById('password').value;
 
-    if(reg_mailAdress.test(mailAdress) && reg_password.test(password)){
+    if(reg_mailAdress.test(mailAdress) || reg_password.test(password)){
       /* none */
-      if(reg_password.test(password)){
-        /* none */
-      }else{
-        window.alert("パスワードは異常な値です");
-      }
       if(reg_mailAdress.test(mailAdress)){
         /* none */
+        if(reg_password.test(password)){
+          /* none */
+        }else{
+          window.alert("パスワードは異常な値です");
+          $("#password").css('background', 'yellow');
+        }  
       }else{
         window.alert("メールアドレスは異常な値です");
-      }  
+        $("#mailAdress").css('background', 'yellow');
+      }
     }else{
       window.alert("パスワードとメールアドレスは異常な値です");
+      $("#mailAdress").css('background', 'yellow');
+      $("#password").css('background', 'yellow');
     }
   });
 }

@@ -39,68 +39,86 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
-<header>
-  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <span class="navbar-brand mb-0 h1 theme">婚活サイト</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
+  
+  <header>
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <span class="navbar-brand mb-0 h1 theme">婚活サイト</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="./index.html">トップ</a>
-        <a class="nav-item nav-link" href="./member.html">ログイン</a>
-        <a class="nav-item nav-link" href="./research.html">コミュニティ</a>
-        <a class="nav-item nav-link" href="./achievement.html">みんなの投稿</a>
-        <a class="nav-item nav-link" href="./access.html">お知らせ</a>
-        <a class="nav-item nav-link" href="./link.html">利用規約</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="./index.html">トップ</a>
+          <a class="nav-item nav-link" href="./member.html">ログイン</a>
+          <a class="nav-item nav-link" href="./research.html">コミュニティ</a>
+          <a class="nav-item nav-link" href="./achievement.html">みんなの投稿</a>
+          <a class="nav-item nav-link" href="./access.html">お知らせ</a>
+          <a class="nav-item nav-link" href="./link.html">利用規約</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="masthead" class="jumbotron jumbotron-fluid">
+      <div class="container container-fixed">
+        <h1>婚活サイトのHome Page</h1>
+        <p class="masthead-description">
+          これは婚活サイトのホームページです。
+        </p>
       </div>
     </div>
-  </nav>
-</header>
 
-<main>
-  <div id="masthead" class="jumbotron jumbotron-fluid">
-    <div class="container container-fixed">
-      <h1>婚活サイトのHome Page</h1>
-      <p class="masthead-description">
-        これは婚活サイトのホームページです。
-      </p>
+    <!-- コンテナ Start -->
+    <div class="container">
+  		<div class="row signup-all-style">
+  			<!-- Row1 新規登録の画像 -->
+  			<div class="mainImg col-lg-12">
+  				<img src="../img/common/community.jpg" alt="婚活サイトへようこそ 趣味でつながる。世界がひろがる" width="450" height="250">
+  				<p>
+  					<a href="利用規約のURL" target="_blank">利用規約</a>、
+  					<a href="http://mixi.co.jp/privacy/" target="_blank">個人情報の取り扱いについて</a>を確認し、同意のうえ登録してください。
+  				</p>
+  			</div>
+  			<!-- Row2 新規登録用のRow -->
+  			<div class="registerEmail col-lg-12">
+  				<label for="input_email_address" class="input_email_address">メールアドレス</label>
+  				<p><input class="input_email_address" id="mailAdress type="text" name="email" size="30" class="email" value="" tabindex="1" data-widget-namespace="xxx" placeholder="example@konkatsu.com"></p>
+  				<a href="./input_basic_profile.html">
+  					<input type="submit" class="mailButton" id="registerAdress" value="メールアドレスで登録" tabindex="2">
+  				</a>
+  				<p class="orTxt">─　または　─</p>
+  				<p>
+  					<a href="TwwiterのURL" class="btn JOIN__button" tabindex="3">Twitterで登録</a>
+  				</p>
+  				<p class="orTxt">※メールアドレスはmixiのログイン及び、通知先として利用及び保存されます。</p>
+  			</div>
+  		</div>
+      <!-- コンテナ End -->
     </div>
-  </div>
 
-  <!-- コンテナ Start -->
-  <div class="container">
-		<div class="row signup-all-style">
-			<!-- Row1 新規登録の画像 -->
-			<div class="mainImg col-lg-12">
-				<img src="../img/common/community.jpg" alt="婚活サイトへようこそ 趣味でつながる。世界がひろがる" width="450" height="250">
-				<p>
-					<a href="利用規約のURL" target="_blank">利用規約</a>、
-					<a href="http://mixi.co.jp/privacy/" target="_blank">個人情報の取り扱いについて</a>を確認し、同意のうえ登録してください。
-				</p>
-			</div>
-			<!-- Row2 新規登録用のRow -->
-			<div class="registerEmail col-lg-12">
-				<label for="input_email_address" id="input_email_address">メールアドレス</label>
-				<p><input id="input_email_address" type="text" name="email" size="30" class="email" value="" tabindex="1" data-widget-namespace="xxx" placeholder="example@konkatsu.com"></p>
-				<a href="./input_basic_profile.html">
-					<input type="submit" class="mailButton" value="メールアドレスで登録" tabindex="2">
-				</a>
-				<p class="orTxt">─　または　─</p>
-				<p>
-					<a href="TwwiterのURL" class="btn JOIN__button" tabindex="3">Twitterで登録</a>
-				</p>
-				<p class="orTxt">※メールアドレスはmixiのログイン及び、通知先として利用及び保存されます。</p>
-			</div>
-		</div>
-    <!-- コンテナ End -->
-  </div>
+    <!--フッター-->
+    <footer>(C) Sysprimary</footer>
+  </main>
 
-  <!--フッター-->
-  <footer>(C) Sysprimary</footer>
-</main>
+  <!-- jsの読み込み -->
+  <script>
+    document.getElementById('registerAdress').addEventListener('click',()=>{
+      /* メールアドレスチェック用の正規表現を格納 */
+      let reg_mailAdress = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/;
+
+      /* メールアドレス入力欄の値取得 */
+      let mailAdress = document.getElementById('mailAdress').value;
+
+      if(reg_mailAdress.test(mailAdress)){
+        /* none */
+      }else{
+        window.alert("メールアドレスは異常な値です");
+      }
+    });
+  </script>
 </body>
 </html>
