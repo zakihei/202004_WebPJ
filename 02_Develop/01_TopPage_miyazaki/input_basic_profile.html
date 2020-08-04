@@ -76,7 +76,7 @@
 
     <!-- コンテナ Start -->
     <div class="container">
-  		<div class="row">
+  		<div class="row" id="row-1">
   			<div class="inputForm-basic-profile col-lg-8">
 
           <!-- ニックネーム -->
@@ -272,12 +272,12 @@
           <!-- 利用目的 -->
           <div class="purpose-style" id="purpose">
             <div id="title-purpose">利用目的(一個以上チェックしてください)</div>
-            <form name="checkbox">
+            <form id="checkbox" name="checkbox">
               <input type="checkbox" name="purpose" value="lover">恋人探し
               <input type="checkbox" name="purpose" value="hobbiesFriend">趣味友達探し
               <input type="checkbox" name="purpose" value="drinkingFriend">飲み友達探し
               <input type="checkbox" name="purpose" value="killingTime">暇つぶし
-              <input type="checkbox" name="purpose" value="others">その他
+              <input id="checkbox-other" type="checkbox" name="purpose" value="others">その他
             </form>
           </div>
 
@@ -286,7 +286,7 @@
             <div>初期パスワード</div>
             <form action="//www-creators.com/rsc/receiver.php" method="post">
               <label>パスワードを入力してください。(半角英小文字大文字数字をそれぞれ1種類以上含む8文字以上15文字以下)</label><br>
-              <input id="password" type="text" name="first-name" maxlength="10" value="" placeholder="p@ssw0rd">
+              <input id="password" type="text" name="password" maxlength="10" value="" placeholder="p@ssw0rd">
             </form>
           </div>
 
