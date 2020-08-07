@@ -45,10 +45,13 @@
   /* パスワードチェック関数 */
   document.getElementById('submit_basicProfile').addEventListener('click',()=>{
 
-		let passwordChkFlg = false;		//パスワードの値が正常かチェック
-		let nicknameChkFlg = false;		//ニックネームの値が正常かチェック
-		let checkboxChkFlg = false;		//チェックボックスの値が正常かチェック
-	
+    let passwordChkFlg = false;		//パスワードの値のチェックフラグ
+		let nicknameChkFlg = false;		//ニックネームの値のチェックフラグ
+		let checkboxChkFlg = false;		//チェックボックスの値のチェックフラグ
+    let passwordWornComment = document.createElement('p');             //注意のコメントを作成(パスワード)
+    let nicknameWornComment = document.createElement('p');             //注意のコメントを作成(ニックネーム)
+    let checkboxWornComment = document.createElement('p');             //注意のコメントを作成(チェックボックス)
+      
     let reg_password = /^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)[a-zA-Z\d]{8,15}$/;		//パスワードチェック用の正規表現を格納(半角英小文字大文字数字をそれぞれ1種類以上含む8文字以上15文字以下) */
     let password = document.getElementById('password').value;		//パスワード入力欄の値取得
 
@@ -59,13 +62,6 @@
     let arr = [];                                                   //チェックした要素を格納する配列
     let purposeCheckbox = document.checkbox.purpose;                //チェックボックスの要素を取得
     
-    let passwordWornComment = document.createElement('p');             //注意のコメントを作成(パスワード)
-    let nicknameWornComment = document.createElement('p');             //注意のコメントを作成(ニックネーム)
-    let checkboxWornComment = document.createElement('p');             //注意のコメントを作成(チェックボックス)
-
-    //let titlePurpose = document.getElementById('title-purpose');    //利用目的のタイトル名が書かれている箇所の要素を取得
-    //let purpose = titlePurpose.parentNode;                          //上記変数の親ノード
-
     passwordWornComment.textContent = "・パスワードは異常な値です";
     passwordWornComment.style.color = "red";
     nicknameWornComment.textContent = "・ニックネームが入力規則の範囲外です";
@@ -74,10 +70,11 @@
     checkboxWornComment.style.color = 'red';
 
     let wornComment = document.createElement('p');           		//警告の表示
-    let containerRow = document.getElementById('row-1');        
-    let wornCommentParent = containerRow.parentNode;
+    let containerRow = document.getElementById('row-1');        //各初期プロフィール要素のRowコンテナ
+    let wornCommentParent = containerRow.parentNode;            //上記の親要素
 
-    wornComment.style.backgroundColor = 'yellow';
+    //wornComment.style.backgroundColor = 'yellow';
+    wornComment.setAttribute("id","worncomment");
 
 	  /* パスワードチェック */
     if(reg_password.test(password)){
