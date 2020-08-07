@@ -34,7 +34,6 @@
       /* その他の入力欄を追加 */
       checkboxParent.insertBefore(otherTextbox, checkbox.nextSibling);
     }else{
-      //checkboxParent.removeChild(otherTextbox);
       $("#other-txt").remove()
     }
 
@@ -42,15 +41,14 @@
 
   /**************** 送信フォーム押下時の処理 ****************/
 
-  /* パスワードチェック関数 */
   document.getElementById('submit_basicProfile').addEventListener('click',()=>{
 
     let passwordChkFlg = false;		//パスワードの値のチェックフラグ
 		let nicknameChkFlg = false;		//ニックネームの値のチェックフラグ
 		let checkboxChkFlg = false;		//チェックボックスの値のチェックフラグ
-    let passwordWornComment = document.createElement('p');             //注意のコメントを作成(パスワード)
-    let nicknameWornComment = document.createElement('p');             //注意のコメントを作成(ニックネーム)
-    let checkboxWornComment = document.createElement('p');             //注意のコメントを作成(チェックボックス)
+    let passwordWornComment = document.createElement('p');             //警告時のコメントを作成(パスワード)
+    let nicknameWornComment = document.createElement('p');             //警告時のコメントを作成(ニックネーム)
+    let checkboxWornComment = document.createElement('p');             //警告時のコメントを作成(チェックボックス)
       
     let reg_password = /^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)[a-zA-Z\d]{8,15}$/;		//パスワードチェック用の正規表現を格納(半角英小文字大文字数字をそれぞれ1種類以上含む8文字以上15文字以下) */
     let password = document.getElementById('password').value;		//パスワード入力欄の値取得
@@ -73,7 +71,6 @@
     let containerRow = document.getElementById('row-1');        //各初期プロフィール要素のRowコンテナ
     let wornCommentParent = containerRow.parentNode;            //上記の親要素
 
-    //wornComment.style.backgroundColor = 'yellow';
     wornComment.setAttribute("id","worncomment");
 
 	  /* パスワードチェック */
