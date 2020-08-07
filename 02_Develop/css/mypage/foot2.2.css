@@ -1,0 +1,188 @@
+/*全般的なスタイル*/
+* {
+	margin:0; padding:0; 	/*全要素のマージン・パディングをリセット*/
+	color:#333333;		/*文字色*/
+
+}
+body {
+	text-align:center;		/*センタリングするため*/
+}
+div#pagebody {
+	width:1100px; margin:0 auto;	/*内容全体をセンタリング*/
+	text-align:left;	/*テキストの配置を左揃えにする*/
+}
+
+/*ヘッダ*/
+div#header {
+	height:77px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
+	background-image:url("images/bg_header.jpg");	/*ヘッダ部分の背景画像*/
+	background-repeat:no-repeat;		/*背景画像を繰り返さない*/
+	background-color:#cccccc;		/*ヘッダ部分の背景色*/
+}
+h1 {
+	padding:20px 0px 0px 30px;		/*見出し内容の位置調整*/
+}
+h1 a {text-decoration:none;} 			/*リンクの下線を無くす*/
+
+/*メインメニュー*/
+ul#menu {
+	height:42px; background-color:#eeeeee; font-weight:bold;
+}
+li#menu01,li#menu02,li#menu03,li#menu04,li#menu05,li#menu06,li#menu07,li#menu08 {
+	float:left;			/*リスト項目を横に並べる*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	list-style-type:none;		/*リストマーカー無しにする*/
+	background-repeat:no-repeat; 	/*背景画像を繰り返さない*/
+}
+
+/*ボタン01～08にはそれぞれ異なる背景画像を指定する*/
+li#menu01 {
+	width:180px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu01.jpg");	/*背景画像*/
+}
+li#menu02 {
+	width:180px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu02.jpg");	/*背景画像*/
+}
+li#menu03 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu03.jpg");	/*背景画像*/
+}
+li#menu04 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu05 {
+	width:80px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu06 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu07 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu08 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu05.jpg");	/*背景画像*/
+}
+ul#menu a {
+	display:block;				/*リンクをブロック表示にする*/
+	height:42px; padding-top:10px; text-align:center;
+	text-decoration:none; 			/*リンクの下線を無くす*/
+}
+
+/*コンテンツ（中央と右の2カラム全体）*/
+div#content {
+	width:950px; margin:10px 20px 10px 0px;	/*幅の指定と位置調整*/
+	float:right;				/*2カラム全体を右寄せにする*/
+}
+
+/*あしあと（中央カラム）*/
+div#foot {
+	width:500px; margin-right:5px; padding-top:40px; /*幅の指定と位置調整*/
+	float:left;					/*カラムを左寄せにする*/
+}
+
+/*見出し*/
+h2 {
+	height:42px; background-color:#eeeeee; font-weight:bold;
+	font-size:90%; margin:10px 0px 10px 0px;
+	background-image:url("images/icon.gif");  /*背景画像*/
+	background-repeat:no-repeat;		 /*背景画像を繰り返さない*/
+}
+p {
+	height:42px; background-color:#eeeeee;
+	font-size:80%; margin:10px 0px 10px 0px;
+	background-image:url("images/bar_pickup.gif");	/*背景画像*/
+	background-repeat:no-repeat;		 /*背景画像を繰り返さない*/
+}
+div#foot li {
+	list-style-type:none; 		/*リストマーカー無しにする*/
+}
+
+li#foot02 {
+	font-size: 80%;
+	display:block;			/*リンクをブロック表示にする*/
+	text-decoration:none;		/*リンクの下線を無くす*/
+ 	margin:30px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#foot02 :hover {
+	background-color:#eeeeee;	/*リンクにマウスが乗ったら色を変える*/
+}
+li#foot03 {
+	font-size: 80%;
+	outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:30px; margin:20px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#foot04 {
+	font-size: 80%;
+	outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:100px; margin:3px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#foot05 {
+	font-size: 80%;
+}
+li#foot06 {
+	font-size: 80%;
+}
+
+/*右カラム*/
+div#column {
+	width:270px; padding-top:30px; 		/*幅の指定と位置調整*/
+	float:right;				/*カラムを右寄せにする*/
+	background-image:url("images/bar_pickup.gif");	/*右カラムの背景画像*/
+	background-repeat:no-repeat;		 /*背景画像を繰り返さない*/
+}
+div#column ul {
+	margin-left:10px; 		/*左マージン*/
+	font-size:90%;			/*フォントサイズ*/
+  width:280px; padding-top:0px 0px 0px 0px;  /*幅の指定と位置調整*/
+}
+div#column li {
+	list-style-type:none; 		/*リストマーカー無しにする*/
+	line-height:10;		/*行の高さをO倍にする*/
+}
+li#tab01 {
+  outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:150px; margin:30px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#tab02 {
+  outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:150px; margin:20px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#tab03 {
+  outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:150px; margin:20px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#tab04 {
+  outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:280px; margin:20px 0px 20px 0px; 		/*高さの指定と位置調整*/
+}
+li#tab05 {
+  outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:350px; margin:0px 0px 0px 0px; 		/*高さの指定と位置調整*/
+}
+li#tab06 {
+  outline: 1px solid black;  /*アウトラインのスタイル・太さ・色を指定する*/
+  height:200px; margin:20px 0px 50px 0px; 		/*幅の指定と位置調整*/
+}
+li#pageTop {
+
+}
+
+/*フッタ*/
+div#footer {
+	height:42px; text-align:center;
+	clear:both;					/*回り込みを解除する*/
+	background-image:url("images/bg_footer.jpg");	/*フッタ部分の背景画像*/
+	background-repeat:no-repeat;			/*背景画像を繰り返さない*/
+	background-color:#cccccc;			/*フッタ部分の背景色*/
+}
+address {
+	font-style:normal;			 /*フォントスタイルを標準にする*/
+	font-size:small;			 /*フォントサイズを小さくする*/
+	padding:5px 0px 5px 0px;		 /*要素内容の位置調整*/
+}
