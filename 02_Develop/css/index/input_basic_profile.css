@@ -38,3 +38,10 @@
 .firstPassword-style {
   margin-bottom: 3%;
 }
+
+/* 警告コメントのスタイル */
+#worncomment{
+  text-align: center;
+  background-color: khaki;
+  margin-left: 120px;
+}
