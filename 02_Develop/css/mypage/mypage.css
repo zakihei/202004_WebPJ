@@ -1,101 +1,107 @@
-/*ヘッダーリンク部分*/
-#header-list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+/*全般的なスタイル*/
+* {
+	margin:0; padding:0; 	/*全要素のマージン・パディングをリセット*/
+	color:#333333;		/*文字色*/
+
+}
+body {
+	text-align:center;		/*センタリングするため*/
+}
+div#pagebody {
+	width:1100px; margin:0 auto;	/*内容全体をセンタリング*/
+	text-align:left;	/*テキストの配置を左揃えにする*/
 }
 
-/*メイン　コンテナ全体*/
-.mypage {
-   display: flex;
-   -webkit-justify-content: space-between;
-   justify-content: space-between;
+/*ヘッダ*/
+div#header {
+	height:77px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
+	background-image:url("images/bg_header.jpg");	/*ヘッダ部分の背景画像*/
+	background-repeat:no-repeat;		/*背景画像を繰り返さない*/
+	background-color:#cccccc;		/*ヘッダ部分の背景色*/
+}
+h1 {
+	padding:20px 0px 0px 30px;		/*見出し内容の位置調整*/
+}
+h1 a {text-decoration:none;} 			/*リンクの下線を無くす*/
+
+/*メインメニュー*/
+ul#menu {
+	height:42px; background-color:#eeeeee; font-weight:bold;
+}
+li#menu01,li#menu02,li#menu03,li#menu04,li#menu05,li#menu06,li#menu07,li#menu08 {
+	float:left;			/*リスト項目を横に並べる*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	list-style-type:none;		/*リストマーカー無しにする*/
+	background-repeat:no-repeat; 	/*背景画像を繰り返さない*/
 }
 
-/*メイン*/
-#left  {
-  background: white;
-  font-size: 18px;
-  font-weight: bold;
-  width: 47%;
-  height: 600px;
-  padding: 20px;
-  text-align:center;
-  outline: 3px solid red;
+/*ボタン01～08にはそれぞれ異なる背景画像を指定する*/
+li#menu01 {
+	width:180px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu01.jpg");	/*背景画像*/
+}
+li#menu02 {
+	width:180px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu02.jpg");	/*背景画像*/
+}
+li#menu03 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu03.jpg");	/*背景画像*/
+}
+li#menu04 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu05 {
+	width:80px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu06 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu07 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu04.jpg");	/*背景画像*/
+}
+li#menu08 {
+	width:120px; height:42px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("images/bg_menu05.jpg");	/*背景画像*/
+}
+ul#menu a {
+	display:block;				/*リンクをブロック表示にする*/
+	height:42px; padding-top:10px; text-align:center;
+	text-decoration:none; 			/*リンクの下線を無くす*/
 }
 
-#side {
-  background: white;
-  font-size: 18px;
-  font-weight: bold;
-  width: 47%;
-  height: 640px;
-  text-align:center;
+/*メインウィンドウ*/
+.main_top {
+  display: flex;			/* 横並び */
 }
 
-
-.main {
-    color: #26d0c9;
-    font-size: 25px;
+.left_1, .center_1 , .right_1 {
+	height: 300px;			/* 高さ指定 */
+	width: 45%;			/* 幅指定 */
+	background-color: #ff;		/* 背景色指定 */
+	margin:  5px;			/* 周りの余白指定 */
 }
-
-label {
-  font-size: 15px;
-  color: black;
-  font-weight: lighter;
+.left_1 {
+	width: 25%;			/* 幅指定 */
 }
-
-input {
-  font-size: 15px;
-  width: 100%;
+.right_1 {
+	width: 25%;			/* 幅指定 */
+	border: 1px solid #000000;	/* 枠線 */
 }
-
-textarea {
-  font-size: 15px;
-  font-weight: lighter;
-  width: 80%;
-  height: 30px;
+/*フッタ*/
+div#footer {
+	height:42px; text-align:center;
+	clear:both;					/*回り込みを解除する*/
+	background-image:url("images/bg_footer.jpg");	/*フッタ部分の背景画像*/
+	background-repeat:no-repeat;			/*背景画像を繰り返さない*/
+	background-color:#cccccc;			/*フッタ部分の背景色*/
 }
-
-button {
-  background-color: #26d0c9;
-  color: white;
-  font-weight: lighter;
-  font-size: 15px;
-  width: 80px;
-  height: 30px;
-  margin: 0px 0px;
+address {
+	font-style:normal;			 /*フォントスタイルを標準にする*/
+	font-size:small;			 /*フォントサイズを小さくする*/
+	padding:10px 0px 5px 0px;		 /*要素内容の位置調整*/
 }
-
-/*コミュニティ*/
-ul.communityList{
-    margin:0 0 40px 55px;
-}
-
-ul.communityList.col1 li{
-    float:left;
-    width:150px;
-    height:210px;
-    margin-right:15px;
-}
-
-ul.communityList.col1 li a.thumbnail{
-    display:table-cell;
-    *display:block;
-    width:150px;
-    height:150px;
-    line-height:150px;
-    text-align:center;
-    vertical-align:middle;
-}
-
-ul.communityList.col1 li a.thumbnail img{
-    max-width:150px;
-    max-height:150px;
-    vertical-align:middle;
-}
-
-ul.communityList li .name{
-    display:block;
-    line-height:1.3;
-    padding-top:8px;

@@ -2,136 +2,115 @@
 <html lang="ja">
 
 <head>
-    <!-- 基本設定 -->
-    <meta charset="UTF-8">
-    <title>マイページ</title>
-    <link rel="icon" type="image/png" href="../img/common/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 基本設定 -->
+	<meta charset="UTF-8">
+	<title>婚活サイト マイページ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- css設定 -->
-    <link rel="stylesheet" href="../../css/common/all-style.css">
-    <link rel="stylesheet" href="../../css/mypage/mypage.css">
+	<!-- css設定 -->
+	<link rel="stylesheet" href="../../css/common/all-style.css">
+	<link rel="stylesheet" href="../../css/mypage/mypage.css">
+	<link rel="stylesheet" href="../../css/mypage/mypage1.css">
 </head>
 
 <body>
+<div id="pagebody">
 
-<header><!-- ヘッダー始まり -->
+	<!-- ヘッダ -->
+	<div id="header"><h1><a href="index.html">婚活サイト</a></h1></div>
 
-    <!-- ロゴ画像-->
-    <div id="masthead" class="jumbotron jumbotron-fluid">
-    <div class="container container-fixed">
-    <h1>マイページ</h1>
-    <p class="masthead-description">マイページ</p>
-    </div>
-    </div>
-    
-    <nav><br><center><!-- ヘッダーリンク -->
-    <!-- リンク貼り付け予定 -->
-        <a class="header-list" href="">プロフィール編集</a>
-        <a class="header-list" href="">コミュニティ</a>
-        <a class="header-list" href="">友達一覧</a>
-        <a class="header-list" href="">DM</a>
-        <a class="header-list" href="">あしあと</a>
-        <a class="header-list" href="">つぶやき</a>
-    </center></nav><br>
+	<!-- メインメニュー -->
+	<ul id="menu">
+		<li id="menu01"><a href="xxx.html">個人用ページ(ホーム)</a></li>
+		<li id="menu02"><a href="xxx.html">プロフィール編集</a></li>
+		<li id="menu03"><a href="xxx.html">コミュニティ</a></li>
+		<li id="menu04"><a href="xxx.html">友達一覧</a></li>
+		<li id="menu05"><a href="xxx.html">DM</a></li>
+		<li id="menu06"><a href="xxx.html">あしあと</a></li>
+		<li id="menu07"><a href="xxx.html">つぶやき</a></li>
+		<li id="menu08"><a href="xxx.html">ログアウト</a></li>
+	</ul>
+	
+<!-- メインウィンドウ -->
+<div class="main_top">
 
-</header><!-- ヘッダー終わり -->
+	<!-- 左カラム -->
+	<div class="left_1">
+		<!-- プロフィール画像-->
+		<li><img src="" alt="プロフィール画像" width="220" height="150" ></li>
+		<li>〇〇さん</li>
+		<li>年齢</li>
+		<li>誕生日</li>
+		<li>自己紹介</li>～自己紹介文～
+	</div>
 
-<main>
+	<!-- 中央カラム -->
+	<div class="center_1">
+	<!-- つぶやき-->つぶやき
+	<div><form name="form" id="id_form" action="">
+	<textarea input name="textBox" id="id_textBox" placeholder="いま、なにしてる？" value="" /></textarea></div>
+	<input type="button" value="つぶやく" onclick="onButtonClick();" />
+	</form>
+	<div id="output"></div>
+	</div>
+	
+	<!-- 右カラム -->
+	<div class="right_1">
+	migi
+	</div>
+	
+</div>
+<!-- メインウィンドウ -->
+<div class="main_top">
 
-<div class="mypage"><!-- ペインcss-->
-  
-    <nav id="left"><!-- ペイン左部分-->
+	<!-- 左カラム -->
+	<div class="left_1">
+		<!--/コミュニティ-->話題のコミュニティ
+			<li><a class="community" href=""><img src=""></a><span class="name"><a href="">コミュニティ１</a></span></li>
+			<li><a class="community" href=""><img src=""></a><span class="name"><a href="">コミュニティ２</a></span></li>                  <li>
+			<li><a class="community" href=""><img src=""></a><span class="name"><a href="">コミュニティ３</a></span></li>
+	</div>
 
-        <h1 class="main">〇〇さん</h1>
-        <!-- プロフィール画像-->
-        <img src="" alt="プロフィール画像" width="220" height="150" >
-        <li>年齢</li>
-        <li>誕生日</li>
-        <li>自己紹介</li>
-        ～自己紹介文～
+	<!-- 中央カラム -->
+	<div class="center_1">
+<!-- あしあと-->あしあと
 
-    <br><hr noshade><!--ライン-->
-    
-        <h1 class="main">話題のコミュニティ</h1>
-        <!--/コミュニティ-->
-                  <ul class="communityList col1">
-                  <li>
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">コミュニティ１</a></span>
-                  </li>
-                  <li>
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">コミュニティ２</a></span>
-                  </li>                  <li>
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">コミュニティ３</a></span>
-                  </li>
-                  </ul>
-                  
-</nav><!-- ペイン左部分-->
+	<li>（<time>2013-03-25 23:55:00</time>）<a class="community" href=""><img src=""></a><span class="name"><a href="">〇〇さん</a></span></li>
+	<li>（<time>2013-03-25 23:55:00</time>）<a class="community" href=""><img src=""></a><span class="name"><a href="">〇□さん</a></span></li>
+	<li>（<time>2013-03-25 23:55:00</time>）<a class="community" href=""><img src=""></a><span class="name"><a href="">□△さん</a></span></li>
 
-
-<nav id="side"><!-- ペイン右部分-->
-<br><hr noshade><!--ライン-->
-
-   <!-- つぶやき-->
-   <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
-      <div>
-          <div>
-          つぶやき<br>
-          <textarea name="content" rows="5" placeholder="いま、なにしてる？"></textarea>
-          </div>
-      </div>
-      <button type="submit">つぶやく</button>
-    </form>
-
-<br><hr noshade><!--ライン-->
-
-    <!-- あしあと-->
-
-    あしあと
-
-                  <li> （<time>2013-03-25 23:55:00</time>）
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">〇〇さん</a></span>
-                  </li>
-                  <li> （<time>2013-03-25 23:55:00</time>）
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">〇□さん</a></span>
-                  </li>
-                  <li> （<time>2013-03-25 23:55:00</time>）
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">□△さん</a></span>
-                  </li>
-
-<br><hr noshade><!--ライン-->
-
-    <!-- DM-->
-    新着メール
-                  <li>
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">〇〇さん</a></span>
-                  </li>
-                  <li> 
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">〇□さん</a></span>
-                  </li>
-                  <li> 
-                  <a class="community" href=""><img src=""></a>
-                  <span class="name"><a href="">□△さん</a></span>
-                  </li>
-
-<br><hr noshade><!--ライン-->
-</nav><!-- ペイン右部分-->
+	</div>
+	
+	<!-- 右カラム -->
+	<div class="right_1">
+	migi
+	</div>
+	
+</div>
+<!-- メインウィンドウ -->
+<div class="main_top">
+	<div class="left_1"></div>
+	
+	<!-- 中央カラム -->
+	<div class="center_1">
+	<!-- DM-->新着メール
+	<li><a class="community" href=""><img src=""></a><span class="name"><a href="">〇〇さん</a></span></li>
+	<li><a class="community" href=""><img src=""></a><span class="name"><a href="">〇□さん</a></span></li>
+	<li><a class="community" href=""><img src=""></a><span class="name"><a href="">□△さん</a></span></li>
+	</div>
+	
+	<!-- 右カラム -->
+	<div class="right_1">
+	migi
+	</div>
+	
+</div>
+	
+	<!-- フッタ -->
+	<center><a href="#">▲ このページの上部へ</a></center>
+	<div id="footer"><address>(C) Sysprimary</address></div>
 
 </div>
-
-    <br>
-    <footer><!-- フッター -->
-    (C) Sysprimary
-    </footer><!-- フッター終わり -->
-    
-</main>
+<script type="text/javascript" src="mypage.js"></script>
 </body>
 </html>
