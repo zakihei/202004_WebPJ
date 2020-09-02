@@ -1,0 +1,51 @@
+.heading02 {
+    clear: both;
+    width: 690px;
+    height: 22px;
+    line-height: 21px;
+    padding: 2px 5px 0 21px;
+    background: url(/img/basic/skin/gray/heading/body_main_area001.gif) no-repeat 0 0;
+    color: #333;
+}
+ul.editContents {
+    border-right: 1px solid #d0d0d1;
+    border-left: 1px solid #d0d0d1;
+    background: #fff;
+}
+
+ul.editContents li {
+    clear: both;
+    border-bottom: 1px solid #d0d0d1;
+    text-align: left;
+}
+
+ul.editContents li dl dd {
+    float: left;
+    width: 554px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+ul.editContents li dl dt {
+    float: left;
+    width: 120px;
+}
+
+ul.editContents dt {
+    background-color: rgb(204, 240, 252); 
+}
+
+ul.editContents dd {
+    float: left;
+    width: 554px;
+}
+
+.necessaryItem {
+    color: #d00;
+    font-weight: 700;
+}
+
+.supplement01{
+    color: #666;
+    font-size: 83%;
+}

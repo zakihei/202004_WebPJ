@@ -1,7 +1,7 @@
 
   'use strict';
 {
-  /* メールアドレスチェック */
+  /* メールアドレス,パスワードチェック */
   document.getElementById('loginbtn').addEventListener('click',()=>{
 
     /* メールアドレスチェック用の正規表現を格納 */
