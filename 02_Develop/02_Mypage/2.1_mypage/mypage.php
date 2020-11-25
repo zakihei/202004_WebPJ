@@ -111,6 +111,6 @@
 	<div id="footer"><address>(C) Sysprimary</address></div>
 
 </div>
-<script type="text/javascript" src="mypage.js"></script>
+<script type="text/javascript" src="../../js/mypage/mypage.js"></script>
 </body>
 </html>
