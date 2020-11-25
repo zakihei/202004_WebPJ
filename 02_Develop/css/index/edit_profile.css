@@ -1,4 +1,4 @@
-.heading02 {
+.heading {
     clear: both;
     width: 690px;
     height: 22px;
@@ -7,37 +7,40 @@
     background: url(/img/basic/skin/gray/heading/body_main_area001.gif) no-repeat 0 0;
     color: #333;
 }
-ul.editContents {
-    border-right: 1px solid #d0d0d1;
-    border-left: 1px solid #d0d0d1;
-    background: #fff;
+
+dl,dt,dd {
+  box-sizing: border-box;
 }
 
-ul.editContents li {
-    clear: both;
+dl {
+    width:1000px;
+    background: rgb(167, 196, 230);
+    border-right: 1px solid#d0d0d1;
     border-bottom: 1px solid #d0d0d1;
-    text-align: left;
+    border-left: 1px solid #d0d0d1;
 }
 
-ul.editContents li dl dd {
+dt,dd {
+    padding: 10px 10px 0 10px;
+    border-top: 1px solid #d0d0d1;
+}
+
+dt {
+    width: 40%;
     float: left;
-    width: 554px;
-    overflow: hidden;
-    word-break: break-all;
 }
 
-ul.editContents li dl dt {
-    float: left;
-    width: 120px;
+dd {
+    background: #fff;
+    margin-left: 40%;
+    padding-bottom: 10px;
+    border-left: 1px solid #d0d0d1;
 }
 
-ul.editContents dt {
-    background-color: rgb(204, 240, 252); 
-}
-
-ul.editContents dd {
-    float: left;
-    width: 554px;
+dd:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .necessaryItem {
@@ -45,7 +48,29 @@ ul.editContents dd {
     font-weight: 700;
 }
 
-.supplement01{
-    color: #666;
-    font-size: 83%;
+/*
+dl{
+    list-style:none;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    overflow:auto;
+    }
+
+dt{
+    float: left ;
+    clear: left ;
+    margin-right: 0.5em ;
+    width: 120px ;
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
 }
+
+dd {
+    float: left ;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+*/
