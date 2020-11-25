@@ -53,7 +53,7 @@
     let reg_password = /^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)[a-zA-Z\d]{8,15}$/;		//パスワードチェック用の正規表現を格納(半角英小文字大文字数字をそれぞれ1種類以上含む8文字以上15文字以下) */
     let password = document.getElementById('password').value;		//パスワード入力欄の値取得
 
-		let reg_nickName = /^(.+){2,8}$/;		//ニックネームチェック用の正規表現を格納(2文字以上８文字以内) 
+		let reg_nickName = /^.{2,8}$/;		//ニックネームチェック用の正規表現を格納(2文字以上８文字以内) 
 		let nickName = document.getElementById('nickname').value;		//ニックネーム入力欄の値取得 
 		
     const checkNum = 1;                                             //チェックする個数の最小値
