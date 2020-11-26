@@ -79,49 +79,351 @@
     <div class="container">
       <div class="editList">
         <div class="row" id="row-1">
-          <div class="heading02">プロフィール内容(*の項目は必須です)</div>
-          <ul class="editContents">
-            <!-- プロフィール画像 -->
-            <li>
-                <dl>
-                  <dt>プロフィール画像</dt>
-                  <dd>
-                    プロフィール写真の設定は
-                    <a href="">こちら</a>
-                  </dd>
-                </dl>
-            </li>
-            <!-- 本名 -->
-            <li>
-                <dl>
-                  <dt>名前
-                    <span class="necessaryItem">*</span>
-                    <br>
-                    <span class="supplement01">(各項目全角10文字以内)</span>
-                  </dt>
-                  <dd>
-                    <div class="editItem01">
-                      <dl class="inputName">
-                        <dt>姓</dt>
-                        <dd>
-                          <input size="10" value=" ">
-                        </dd>
-                      </dl>
-                    </div>
-                  </dd>
-                </dl>
-            </li>
-            <!-- ニックネーム -->
-            <li>
-                <dl>
-                  <dt>ニックネーム
-                    <span class="necessaryItem">*</span>
-                    <br>
-                    <span class="supplement01">(全角10文字以内)</span>
-                  <dd>
-                    *書き込みなどはこちらで表示されます。
-                  </dd>
-                </dl>
+          <div class="heading">プロフィール内容(*の項目は必須です)</div>
+          <div class="editContents">
+            <dl>
+              <!-- プロフィール画像 -->
+              <dt>プロフィール写真</dt>
+              <dd>プロフィール写真の設定は<span><a href=""><u>こちら</u></a></span></dd>
+
+              <!-- 本名 -->
+              <dt>名前<span class="necessaryItem">*</span>
+                <div>(各項目全角10文字以内)</div>
+              </dt>
+              <dd>
+                姓 <input type="text" name="first-name" maxlength="10" value="" >
+                名 <input type="text" name="first-name" maxlength="10" value="" >
+                <div>※名前の登録については<span><a href=""><u>こちら</u></a></span>もご覧ください。</div>
+              </dd>
+
+              <!-- ニックネーム -->
+              <dt>ニックネーム<span class="necessaryItem">*</span>
+                <div>(全角10文字以内)</div>
+              </dt>
+              <dd>
+                <input type="text" name="nickName" maxlength="10" value="" >
+                <div>※書き込みなどはこちらで表示されます。</div>
+              </dd>
+
+              <!-- 現住所* -->
+              <!--市区町村選べるようにする？-->
+              <dt>現住所<span class="necessaryItem">*</span></dt>
+              <dd>お住まい
+                <select name="pref">
+                <option value="">選択してください</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都" selected>東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+                </select>
+                <div>市区町村の項目は任意です。</div>
+              </dd>
+
+              <!-- 性別 -->
+              <dt>性別<span class="necessaryItem">*</span></dt>
+              <dd>
+                <form action="//www-creators.com/rsc/receiver.php" method="post">
+                  <input id="radio-a" type="radio" name="sex" value="men" checked><label for="radio-a">男性</label><br>
+                  <input id="radio-b" type="radio" name="sex" value="momen"><label for="radio-b">女性</label><br>
+                </form>
+              </dd>
+              
+              <!-- 誕生日 -->
+              <dt>誕生日<span class="necessaryItem">*</span></dt>
+              <dd>
+                <select name="birthMonth">
+                <option value="">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select>　月
+                <select name="birthday">
+                <option value="">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                </select>　日         
+              </dd>
+
+              <!-- 生まれた年 -->
+              <dt>生まれた年<span class="necessaryItem">*</span></dt>
+              <dd>                
+                <select name="birrthYear">
+                <option value="">選択してください</option>
+                <option value="1960">1960</option>
+                <option value="1961">1961</option>
+                <option value="1962">1962</option>
+                <option value="1963">1963</option>
+                <option value="1964">1964</option>
+                <option value="1965">1965</option>
+                <option value="1966">1966</option>
+                <option value="1967">1967</option>
+                <option value="1968">1968</option>
+                <option value="1969">1969</option>
+                <option value="1970">1970</option>
+                <option value="1971">1971</option>
+                <option value="1972">1972</option>
+                <option value="1973">1973</option>
+                <option value="1974">1974</option>
+                <option value="1975">1975</option>
+                <option value="1976">1976</option>
+                <option value="1977">1977</option>
+                <option value="1978">1978</option>
+                <option value="1979">1979</option>
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                </select>　年
+              </dd>
+
+              <!-- 血液型 -->
+              <dt>血液型</dt>
+              <dd>                
+                <select name="bloodType">
+                <option value="">選択してください</option>
+                <option value="">A型</option>
+                <option value="">B型</option>
+                <option value="">O型</option>
+                <option value="">AB型</option>
+                </select>
+              </dd>
+
+              <!-- 趣味 -->
+              <dt>趣味</dt>
+              <dd> 
+                <form id="checkbox" name="checkbox">
+                <div><input type="checkbox" name="hobby" value="">映画鑑賞</div>
+                <div><input type="checkbox" name="hobby" value="">スポーツ</div>
+                <div><input type="checkbox" name="hobby" value="">カラオケ・バンド</div>
+                <div><input type="checkbox" name="hobby" value="">スポーツ観戦</div>
+                <div><input type="checkbox" name="hobby" value="">料理</div>
+                <div><input type="checkbox" name="hobby" value="">グルメ</div>
+                <div><input type="checkbox" name="hobby" value="">お酒</div>
+                <div><input type="checkbox" name="hobby" value="">ショッピング</div>
+                <div><input type="checkbox" name="hobby" value="">ファッション</div>
+                <div><input type="checkbox" name="hobby" value="">アウトドア</div>
+                <div><input type="checkbox" name="hobby" value="">ドライブ</div>
+                <div><input type="checkbox" name="hobby" value="">旅行</div>
+                <div><input type="checkbox" name="hobby" value="">アート</div>
+                <div><input type="checkbox" name="hobby" value="">習いごと</div>
+                <div><input type="checkbox" name="hobby" value="">語学</div>
+                <div><input type="checkbox" name="hobby" value="">読書</div>
+                <div><input type="checkbox" name="hobby" value="">マンガ</div>
+                <div><input type="checkbox" name="hobby" value="">テレビ</div>
+                <div><input type="checkbox" name="hobby" value="">ゲーム</div>
+                <div><input type="checkbox" name="hobby" value="">インターネット</div>
+                <div><input type="checkbox" name="hobby" value="">ギャンブル</div>
+                <div><input type="checkbox" name="hobby" value="">ペット</div>
+                <div><input type="checkbox" name="hobby" value="">美容・ダイエット</div>
+                <div><input id="checkbox-other" type="checkbox" name="hobby" value="">その他</div>
+                </form>
+              </dd>
+
+              <!-- 職業 -->
+              <dt>職業</dt>
+              <dd>
+                <select name="job">
+                <option value="0" selected="selected">▼選択</option>
+                <option value="1">IT関係</option><option value="2">事務系</option>
+                <option value="3">技術系</option><option value="4">営業・企画系</option>
+                <option value="5">クリエーター系</option><option value="6">販売系</option>
+                <option value="7">サービス業</option><option value="8">ガテン系</option>
+                <option value="9">役員・管理職</option><option value="10">専門職</option>
+                <option value="11">公務員</option><option value="12">教員</option><option value="13">自営業</option>
+                <option value="14">アーティスト</option>
+                <option value="15">フリーター</option><option value="18">高校生</option>
+                <option value="16">大学生・院生</option><option value="17">専門学校生</option>
+                <option value="20">主婦</option><option value="21">求職中</option>
+                <option value="22">その他</option>
+                </select>
+              </dd>
+
+              <!-- 所属 -->
+              <dt>所属
+                <div>(全角100文字以内)</div>
+              </dt>
+              <dd>
+                <input type="text" name="Affiliation" maxlength="500" value="">
+                <div>※会社名や学校名をご記入ください。この項目は任意です。</div>
+              </dd>
+
+              <!-- 自己紹介 -->
+              <dt>自己紹介<span class="necessaryItem">*</span>
+                <div>(全角100文字以内)</div>
+              </dt>
+              <dd>
+                <input type="text" name="nickName" maxlength="100" value="">
+              </dd>
+
+              <!-- 好きな〇〇1 -->
+              <dt>好きな
+                <select name="fav1" class="">
+                <option value="0" selected="selected">▼選択</option>
+                <option value="1">映画</option><option value="2">スポーツ</option>
+                <option value="3">音楽</option><option value="4">食べ物・飲み物</option>
+                <option value="5">ブランド</option><option value="6">アウトドア</option>
+                <option value="7">観光地</option><option value="8">アート</option>
+                <option value="9">習いごと</option><option value="10">本・マンガ</option>
+                <option value="11">テレビ番組</option><option value="12">有名人</option>
+                <option value="13">ゲーム</option><option value="14">ホームページ</option>
+                <option value="15">ギャンブル</option><option value="16">ペット</option>
+                <option value="17">言葉</option><option value="18">休日の過ごし方</option>
+                </select>
+              </dt>
+              <dd><input type="text" name="hobby3" maxlength="100" value=""></dd>
+
+              <!-- 好きな〇〇1 -->
+              <dt>好きな
+                <select name="fav1" class="">
+                <option value="0" selected="selected">▼選択</option>
+                <option value="1">映画</option><option value="2">スポーツ</option>
+                <option value="3">音楽</option><option value="4">食べ物・飲み物</option>
+                <option value="5">ブランド</option><option value="6">アウトドア</option>
+                <option value="7">観光地</option><option value="8">アート</option>
+                <option value="9">習いごと</option><option value="10">本・マンガ</option>
+                <option value="11">テレビ番組</option><option value="12">有名人</option>
+                <option value="13">ゲーム</option><option value="14">ホームページ</option>
+                <option value="15">ギャンブル</option><option value="16">ペット</option>
+                <option value="17">言葉</option><option value="18">休日の過ごし方</option>
+                </select>  
+              </dt>
+              <dd><input type="text" name="hobby3" maxlength="100" value=""></dd>
+
+              <!-- 好きな〇〇1 -->
+              <dt>好きな
+                <select name="fav1" class="">
+                <option value="0" selected="selected">▼選択</option>
+                <option value="1">映画</option><option value="2">スポーツ</option>
+                <option value="3">音楽</option><option value="4">食べ物・飲み物</option>
+                <option value="5">ブランド</option><option value="6">アウトドア</option>
+                <option value="7">観光地</option><option value="8">アート</option>
+                <option value="9">習いごと</option><option value="10">本・マンガ</option>
+                <option value="11">テレビ番組</option><option value="12">有名人</option>
+                <option value="13">ゲーム</option><option value="14">ホームページ</option>
+                <option value="15">ギャンブル</option><option value="16">ペット</option>
+                <option value="17">言葉</option><option value="18">休日の過ごし方</option>
+                </select>      
+              </dt>
+              <dd><input type="text" name="hobby3" maxlength="100" value=""></dd>
+            </dl>  
           </ul>      
         </div>
       </div>
