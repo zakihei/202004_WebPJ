@@ -1,285 +1,249 @@
 <!DOCTYPE html>
 <html lang="jp" prefix="og: http://ogp.me/ns#">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="これは、婚活サイトのホームページです。">
-    <meta name="keywords" content="婚活サイト">
-    <meta name="author" content="宮崎滉平">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="これは、婚活サイトのホームページです。">
+	    <meta name="keywords" content="婚活サイト">
+	    <meta name="author" content="宮崎滉平">
 
-    <!-- OGPタグについての設定 -->
-    <meta property="og:title" content="婚活サイト" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="これは、婚活サイトのホームページです。" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:locale" content="ja_JP" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="">
-    <meta name="twitter:creator" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- OGPタグについての設定 -->
+	    <meta property="og:title" content="婚活サイト" />
+	    <meta property="og:type" content="website" />
+	    <meta property="og:description" content="これは、婚活サイトのホームページです。" />
+	    <meta property="og:url" content="" />
+	    <meta property="og:image" content="" />
+	    <meta property="og:locale" content="ja_JP" />
+	    <meta name="twitter:card" content="summary" />
+	    <meta name="twitter:site" content="">
+	    <meta name="twitter:creator" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>婚活サイト</title>
-    <link rel="icon" type="image/png" href="../img/common/icon.png">
+	    <title>婚活サイト</title>
+	    <link rel="icon" type="image/png" href="../img/common/icon.png">
 
-    <!-- bootstrap読み込み -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/common/all-style.css">
-    <link rel="stylesheet" href="../css/index/index.css">
+	    <!-- bootstrap読み込み -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	    <link rel="stylesheet" href="../css/common/all-style.css">
+	    <link rel="stylesheet" href="../css/index/index.css">
 
-    <!-- jsファイル読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Lightbox2読み込み設定 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	    <!-- jsファイル読み込み -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	    <!-- Lightbox2読み込み設定 -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	</head>
 
-</head>
+	<body>
+		<div id="fb-root"></div>
+	  	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
+	  	<header>
+	    	<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	      		<span class="navbar-brand mb-0 h1 theme">婚活サイト</span>
+	      		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	        		<span class="navbar-toggler-icon"></span>
+	    		</button>
 
-<body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
-  <header>
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <span class="navbar-brand mb-0 h1 theme">婚活サイト</span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	    		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+	        			<a class="nav-item nav-link active" href="./index.html">トップ</a>
+	        			<a class="nav-item nav-link" href="./member.html">ログイン</a>
+	        			<a class="nav-item nav-link" href="./research.html">コミュニティ</a>
+	        			<a class="nav-item nav-link" href="./achievement.html">みんなの投稿</a>
+	        			<a class="nav-item nav-link" href="./access.html">お知らせ</a>
+	        			<a class="nav-item nav-link" href="./link.html">利用規約</a>
+	    			</div>
+	    		</div>
+	    	</nav>
+	  	</header>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="./index.html">トップ</a>
-        <a class="nav-item nav-link" href="./member.html">ログイン</a>
-        <a class="nav-item nav-link" href="./research.html">コミュニティ</a>
-        <a class="nav-item nav-link" href="./achievement.html">みんなの投稿</a>
-        <a class="nav-item nav-link" href="./access.html">お知らせ</a>
-        <a class="nav-item nav-link" href="./link.html">利用規約</a>
-      </div>
-    </div>
-    </nav>
-  </header>
+		<main>
+	    	<div id="masthead" class="jumbotron jumbotron-fluid">
+	      		<div class="container container-fixed">
+	        	<h1>婚活サイトのHome Page</h1>
+	        	<p class="masthead-description">これは婚活サイトのホームページです。</p>
+	      		</div>
+	    	</div>
 
-  <main>
-    <div id="masthead" class="jumbotron jumbotron-fluid">
-      <div class="container container-fixed">
-        <h1>婚活サイトのHome Page</h1>
-        <p class="masthead-description">これは婚活サイトのホームページです。</p>
-      </div>
-    </div>
+	    	<div class="content-description">
+	    		<!-- コンテナ Start -->
+	    		<div class="container ">
+	        		<!-- 大枠のrow Start-->
+	        		<div class="row">
+	        			<div class="col-lg-8">
+							<!-- トピックのRow Start-->
+	            			<div class="row" id="overall-right-style">
 
-    <div class="content-description">
-      <!-- コンテナ Start -->
-      <div class="container ">
-        <!-- 大枠のrow Start-->
-        <div class="row">
+	            				<!--News_sectionHeader-->            
+	            				<div class="col-lg-12" id="topic-news-style">
+	        						<div class="sectionHeader">
+	                				<h2 class="community">News</h2>
+	                				<p><a href="https://mixi.jp/search_community.pl">News</a></p>
+	              					</div>                
+	              				</div>
 
-          <!-- トピックのRow -->
-          <div class="col-lg-8">
-            <div class="row" id="overall-right-style">
+	            				<!--Community_sectionHeader-->
+	            				<div class="col-lg-12" id="topic-community-style">
+	                				<div class="sectionHeader">
+	                					<h2 class="community">コミュニティ</h2>
+	                					<p><a href="https://mixi.jp/search_community.pl">コミュニティへ</a></p>
+	                				</div>
 
-              <!--News_sectionHeader-->            
-              <div class="col-lg-12" id="topic-news-style">
-              <div class="sectionHeader">
-                <h2 class="community">News</h2>
-                <p><a href="https://mixi.jp/search_community.pl">News</a></p>
-              </div>                
-              </div>
+	                				<!--/communityContent-->
+	                				<div class="communityContent sectionContent">
+	                					<!--/thumbnailList col4-->
+	                					<ul class="thumbnailList col4">
+	            							<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1677149"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/71/49/1677149_196.jpg" alt="可愛い人妻が好き♡"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=1677149">可愛い人妻が好き♡</a>(2008)</span>
+	                						</li>
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=9"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/0/9/9_45.gif" alt="酒好き"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=9">酒好き</a>(166481)</span>
+	                							</li>
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1840848"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/8/48/1840848_43.jpg" alt="心の居場所"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=1840848">心の居場所</a>(6432)</span>
+	                						</li>  
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=3993718"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/37/18/3993718_24.jpg" alt="自衛隊 フレンドシップコミュ"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=3993718">自衛隊 フレンドシップコミュ</a>(6178)</span>
+											</li>
+	                					</ul>
+									
+	                					<!--/thumbnailList col5 -->                
+	                					<ul class="thumbnailList col5">
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=5697229"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/72/29/5697229_178.jpg" alt="乃木坂46 (ノギザカ46)"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=5697229">乃木坂46 (ノギザカ46)</a>(21303)</span>
+	                						</li>
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1257679"><img src="https://img.mixi.net/img/basic/common/noimage_comm180.gif" alt="☆嫁♪ガンバレ!!嫁姑問題☆"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=1257679">☆嫁♪ガンバレ!!嫁姑問題☆</a>(10510)</span>
+	                						</li>
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=274"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/2/74/274_17.jpg" alt="千葉 ロッテマリーンズ"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=274">千葉 ロッテマリーンズ</a>(37401)</span>
+	                						</li>
+	                						<li>
+		                						<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=4563712"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/37/12/4563712_146.png" alt="管理栄養士合格＆知識維持100%"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=4563712">管理栄養士合格＆知識維持100%</a>(2988)</span>
+	                						</li>
+	                						<li>
+	                							<a class="thumbnail" href="https://mixi.jp/view_community.pl?id=347263"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/72/63/347263_12.jpg" alt="ＴＨＥ☆恋愛相談"></a>
+	                							<span class="name"><a href="https://mixi.jp/view_community.pl?id=347263">ＴＨＥ☆恋愛相談</a>(27974)</span>
+	        								</li>
+	                					</ul>
+	                				</div>
+	              				</div>
+							
+	              				<!--Other_sectionHeader-->            
+	              				<div class="col-lg-12" id="topic-other-style">
+	              					<div class="sectionHeader">
+	              		  				<h2 class="community">Other</h2>
+	              		  				<p><a href="https://mixi.jp/search_community.pl">Other</a></p>
+	              					</div>  
+								</div>
+							<!-- トピックのRow End-->
+	            			</div>
+	          			</div>
 
-              <!--Community_sectionHeader-->
-              <div class="col-lg-12" id="topic-community-style">
-                <div class="sectionHeader">
-                  <h2 class="community">コミュニティ</h2>
-                  <p><a href="https://mixi.jp/search_community.pl">コミュニティへ</a></p>
-                </div>
+	          			<!-- 新規登録のRow Start-->
+	          			<div class="col-lg-4">
+	            			<div class="row" id="overall-left-style">
+	              				<!-- 新規登録ボタン リンクを貼る -->
+	              				<a href="./signup.html" class="col-lg-12 btn btn-primary signup-btn-style">新規登録はこちら</a>
+	              				<!-- ログインフォーム -->
+	              				<div class="col-lg-12" id="loginform-style">
+	              					<div>
+	              				    	<div>
+	              				      		<div>
+	              				        		<label for="MailAdress" class="loginForm-inputLabel">メールアドレス</label>
+	              				        		<input type="text" name="MailAdress" id="mailAdress" size="30" tabindex="1" placeholder="example@konkatsu.com" value="">
+	              				      		</div>
+	              				      		<div>
+	              				        		<label for="password" class="loginForm-inputLabel">パスワード</label>
+	              				        		<input type="password" name="PassWord" id="password" size="30" tabindex="2" placeholder="password" value="">
+	              				      		</div>
+	              				    	</div>
+	              				    	<p><input type="checkbox" checked="checked" id="auto" name="sticky" tabindex="3">
+	              				    	<label for="auto">次回から自動的にログイン</label>
+	              				    	</p>
+	              				    	<a href="" class="login-knowledge">ログインでお困りの方はこちら</a>
+	              				    	<a href="" class="login-knowledge">画像選択の画面が表示されたら？</a>
+	              				    	<button type="submit" class="btn btn-primary login-btn-style" id="loginbtn">ログイン</button>
+	              				  	</div>
+	              				</div>
 
-                <!--/communityContent-->
-                <div class="communityContent sectionContent">
-                  <!--/thumbnailList col4-->
-                  <ul class="thumbnailList col4">
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1677149"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/71/49/1677149_196.jpg" alt="可愛い人妻が好き♡"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=1677149">可愛い人妻が好き♡</a>(2008)</span>
-                  </li>
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=9"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/0/9/9_45.gif" alt="酒好き"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=9">酒好き</a>(166481)</span>
-                  </li>
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1840848"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/8/48/1840848_43.jpg" alt="心の居場所"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=1840848">心の居場所</a>(6432)</span>
-                  </li>  
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=3993718"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/37/18/3993718_24.jpg" alt="自衛隊 フレンドシップコミュ"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=3993718">自衛隊 フレンドシップコミュ</a>(6178)</span>
-                  </li>
-                  </ul>
+	            				<!-- キーワード -->
+	            				<div class="col-lg-12" id="keyword-style">keyword
+	            					<ul>
+	            						<li><a href="">IT</a></li>
+	            						<li><a href="">IT</a></li>
+	            						<li><a href="">IT</a></li>
+	            						<li><a href="">SE</a></li>
+	            						<li><a href="">PROGRAM</a></li>
+	            						<li><a href="">mixi</a></li>
+	            						<li><a href="">facebook</a></li>
+	            						<li><a href="">twitter</a></li>
+	            					</ul>
+	            				</div>
 
-                  <!--/thumbnailList col5 -->                
-                  <ul class="thumbnailList col5">
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=5697229"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/72/29/5697229_178.jpg" alt="乃木坂46 (ノギザカ46)"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=5697229">乃木坂46 (ノギザカ46)</a>(21303)</span>
-                  </li>
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=1257679"><img src="https://img.mixi.net/img/basic/common/noimage_comm180.gif" alt="☆嫁♪ガンバレ!!嫁姑問題☆"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=1257679">☆嫁♪ガンバレ!!嫁姑問題☆</a>(10510)</span>
-                  </li>
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=274"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/2/74/274_17.jpg" alt="千葉 ロッテマリーンズ"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=274">千葉 ロッテマリーンズ</a>(37401)</span>
-                  </li>
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=4563712"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/37/12/4563712_146.png" alt="管理栄養士合格＆知識維持100%"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=4563712">管理栄養士合格＆知識維持100%</a>(2988)</span>
-                  </li>
-                  <li>
-                  <a class="thumbnail" href="https://mixi.jp/view_community.pl?id=347263"><img src="https://logo-imagecluster.img.mixi.jp/photo/comm/72/63/347263_12.jpg" alt="ＴＨＥ☆恋愛相談"></a>
-                  <span class="name"><a href="https://mixi.jp/view_community.pl?id=347263">ＴＨＥ☆恋愛相談</a>(27974)</span>
-                  </li>
-                  </ul>
-                </div>
-              </div>
+	            				<!-- サービス -->
+	            				<div class="col-lg-12" id="service-style">サービス
+	              					<ul>
+	                					<li><a href="">IT</a></li>
+	                					<li><a href="">IT</a></li>
+	                					<li><a href="">IT</a></li>
+	                					<li><a href="">SE</a></li>
+	                					<li><a href="">PROGRAM</a></li>
+	                					<li><a href="">mixi</a></li>
+	                					<li><a href="">facebook</a></li>
+	                					<li><a href="">twitter</a></li>              
+	              					</ul>
+	            				</div>
+							</div>
+						<!-- 新規登録のRow End-->
+	          			</div>
+	        		<!-- 大枠のRow End-->
+	        		</div>
+				<!-- コンテナ End -->  
+				</div>
+	    	</div>
+	    	<!--フッター-->
+	    	<footer >(C) Sysprimary</footer>
+		</main>
 
-              <!--Other_sectionHeader-->            
-              <div class="col-lg-12" id="topic-other-style">
-              <div class="sectionHeader">
-                <h2 class="community">Other</h2>
-                <p><a href="https://mixi.jp/search_community.pl">Other</a></p>
-              </div>  
-              </div>
-            </div>
-          </div>
+		<!--ここの謎を解く
+		<script>
+	    	$(function(){
+	        	$.ajax('./recentevent.html', {
+	            	timeout : 3000,
+	            	datatype:'html'
+	        	}).then(
+	            	function(data)
+	            	{
+	                	var out_html = $($.parseHTML(data));//parse
+	                	$('#news').empty().append(out_html.filter('#news')[0].innerHTML);
 
-          <!-- 新規登録のRow -->
-          <div class="col-lg-4">
-            <div class="row" id="overall-left-style">
-              <!-- 新規登録ボタン リンクを貼る -->
-              <a href="./signup.html" class="col-lg-12 btn btn-primary signup-btn-style">新規登録はこちら</a>
-              <!-- ログインフォーム -->
-              <div class="col-lg-12" id="loginform-style">
-                <div>
-                  <div>
-                    <div>
-                      <label for="MailAdress" class="loginForm-inputLabel">メールアドレス</label>
-                      <input type="text" name="MailAdress" id="mailAdress" size="30" tabindex="1" placeholder="example@konkatsu.com" value="">
-                    </div>
-                    <div>
-                      <label for="password" class="loginForm-inputLabel">パスワード</label>
-                      <input type="password" name="PassWord" id="password" size="30" tabindex="2" placeholder="password" value="">
-                    </div>
-                  </div>
-                  <p><input type="checkbox" checked="checked" id="auto" name="sticky" tabindex="3">
-                  <label for="auto">次回から自動的にログイン</label>
-                  </p>
-                  <a href="" class="login-knowledge">ログインでお困りの方はこちら</a>
-                  <a href="" class="login-knowledge">画像選択の画面が表示されたら？</a>
-                  <button type="submit" class="btn btn-primary login-btn-style" id="loginbtn">ログイン</button>
-                </div>
-              </div>
-
-              <!-- キーワード -->
-              <div class="col-lg-12" id="keyword-style">keyword
-              <ul>
-                <li>
-                  <a href="">IT</a>
-                </li>
-                <li>
-                  <a href="">IT</a>
-                </li>
-                <li>
-                  <a href="">IT</a>
-                </li>
-                <li>
-                  <a href="">SE</a>
-                </li>
-                <li>
-                  <a href="">PROGRAM</a>
-                </li>
-                <li>
-                  <a href="">mixi</a>
-                </li>
-                <li>
-                  <a href="">facebook</a>
-                </li>
-                <li>
-                  <a href="">twitter</a>
-                </li>
-              </ul>
-              </div>
-
-              <!-- サービス -->
-              <div class="col-lg-12" id="service-style">サービス
-              <ul>
-                <li>
-                  <a href="">IT</a>
-                </li>
-                <li>
-                  <a href="">IT</a>
-                </li>
-                <li>
-                  <a href="">IT</a>
-                </li>
-                <li>
-                  <a href="">SE</a>
-                </li>
-                <li>
-                  <a href="">PROGRAM</a>
-                </li>
-                <li>
-                  <a href="">mixi</a>
-                </li>
-                <li>
-                  <a href="">facebook</a>
-                </li>
-                <li>
-                  <a href="">twitter</a>
-                </li>              
-              </ul>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        <!-- 大枠のRow End-->
-      </div>
-      <!-- コンテナ End -->
-      </div>
-    </div>
-    <!--フッター-->
-    <footer >(C) Sysprimary</footer>
-  </main>
-
-  <!--ここの謎を解く
-  <script>
-      $(function(){
-          $.ajax('./recentevent.html', {
-              timeout : 3000,
-              datatype:'html'
-          }).then(
-              function(data)
-              {
-                  var out_html = $($.parseHTML(data));//parse
-                  $('#news').empty().append(out_html.filter('#news')[0].innerHTML);
-
-              },
-              function(jqXHR, textStatus)
-              {
-                  if(textStatus!=="success") {
-                      var txt = "<p>textStatus:"+ textStatus + "</p>" +
-                          "<p>status:"+ jqXHR.status + "</p>" +
-                          "<p>responseText : </p><div>" + jqXHR.responseText +
-                          "</div>";
-                      $('#news').html(txt);
-                  }
-              }
-          );
-      });
-  </script>
-  -->
-  <!-- jsの読み込み -->
-  <script src="../js/index/index_func.js"></script>
-</body>
+	              	},
+	              	function(jqXHR, textStatus)
+	              	{
+	                	if(textStatus!=="success") {
+	                    	var txt = "<p>textStatus:"+ textStatus + "</p>" +
+	                        	"<p>status:"+ jqXHR.status + "</p>" +
+	                        	"<p>responseText : </p><div>" + jqXHR.responseText +
+	                        	"</div>";
+	                    	$('#news').html(txt);
+	                	}
+	            	}
+	        	);
+	    	});
+	  	</script>
+	  	-->
+		<!-- jsの読み込み -->
+		<script src="../js/index/index_func.js"></script>
+	</body>
 </html>
