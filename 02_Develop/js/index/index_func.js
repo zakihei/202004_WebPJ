@@ -1,8 +1,14 @@
 
-  'use strict';
+'use strict';
+
+/**************** ファイル説明 ****************/
+/*	概要　トップページの機能を定義          	 */
+/*  作成者　宮崎                              */
+/**************** ファイル説明 ****************/
+
 {
-  /* メールアドレス,パスワードチェック */
-  document.getElementById('loginbtn').addEventListener('click',()=>{
+	/* メールアドレス,パスワードチェック */
+	document.getElementById('loginbtn').addEventListener('click',()=>{
 
     /* メールアドレスチェック用の正規表現を格納 */
     let reg_mailAdress = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/;
@@ -15,23 +21,23 @@
     let password = document.getElementById('password').value;
 
     if(reg_mailAdress.test(mailAdress) || reg_password.test(password)){
-      /* none */
-      if(reg_mailAdress.test(mailAdress)){
-        /* none */
-        if(reg_password.test(password)){
-          /* none */
-        }else{
-          window.alert("パスワードは異常な値です");
-          $("#password").css('background', 'yellow');
-        }  
-      }else{
-        window.alert("メールアドレスは異常な値です");
-        $("#mailAdress").css('background', 'yellow');
-      }
-    }else{
-      window.alert("パスワードとメールアドレスは異常な値です");
-      $("#mailAdress").css('background', 'yellow');
-      $("#password").css('background', 'yellow');
-    }
-  });
+    	/* none */
+    	if(reg_mailAdress.test(mailAdress)){
+        	/* none */
+        	if(reg_password.test(password)){
+          		/* none */
+        	}else{
+    			window.alert("パスワードは異常な値です");
+        		$("#password").css('background', 'yellow');
+        	}  
+    	}else{
+    		window.alert("メールアドレスは異常な値です");
+        	$("#mailAdress").css('background', 'yellow');
+    	}
+    	}else{
+    		window.alert("パスワードとメールアドレスは異常な値です");
+    		$("#mailAdress").css('background', 'yellow');
+    		$("#password").css('background', 'yellow');
+    	}
+	});
 }
