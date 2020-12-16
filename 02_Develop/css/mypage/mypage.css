@@ -105,3 +105,9 @@ address {
 	font-size:small;			 /*フォントサイズを小さくする*/
 	padding:10px 0px 5px 0px;		 /*要素内容の位置調整*/
 }
+
+#id_textBox:focus {	/* つぶやき枠線 */
+    border-color: blue;   /* 枠線の色 */
+    background-color: #ffc;  /* 背景色 */
+    outline: none;           /* ※ブラウザが標準で付加する線を消したいとき */
+}
